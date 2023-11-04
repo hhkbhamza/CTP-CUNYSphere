@@ -293,7 +293,7 @@ easily register and create a profile so that I can access study resources.
 search and download relevant study materials so that I can prepare for my exams.
 join or initiate discussions on topics I'm interested in so that I can understand concepts better.
 rate and review resources so that others can benefit from my feedback and make informed choices
-create or join study groups so that I can collaborate with peers.
+create or join study groups so that I can collaborate with peers. 
 
 
 As an administrator, I want to…
