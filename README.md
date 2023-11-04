@@ -247,3 +247,56 @@ git push heroku main
 ├── package-lock.json
 └── package.json
 </pre>
+
+____________________________________________________________________________________________
+### Team Name & Project Name
+CUNYCrafters & CUNYSphere
+
+### Team Members
+Dahyeon Park, Benjamin Zhang, Omar Abdullah, Amir Hamza
+
+### Executive summary
+A summary of your project
+In today’s vast digital landscape, students often face challenges in sourcing reliable academic resources and engaging with peers who share their educational pursuits. UniSphere is designed to address these challenges by serving as a comprehensive platform for students. Here's how it works:
+### What does the application do?
+UniSphere provides a two-fold service approach for students. Firstly, it offers a selection of vetted academic resources, assisting students in their studies. Secondly, it creates a dedicated space for students to interact, discuss, and collaborate on academic topics.
+
+
+### What is the motivation for your application?
+The driving force behind UniSphere is to address the existing gap in the market. Students often find themselves switching between platforms that are either off academic resources or community engagement. UniSphere aims to streamline the student experience by seamlessly integrating both aspects into a single platform. 
+
+
+### Which types of people would want to use this application?
+UniSphere is tailored specifically to college students, particularly those within the CUNY system. However, it can also benefit high school students who are considering attending CUNY college in the future. 
+
+
+### Are there similar applications and/or competitors available now? How does your idea differ? or why is there a need for a competitor?
+While there are existing platforms like CourseHero and CollegeConfidential that cater to student needs, they tend to address only one aspect of the student experience. CourseHero primarily focuses on providing study materials, while CollegeConfidential emphasizes student discussions. UniSphere sets itself apart by integrating academic resources with a vibrant community, offering students a holistic experience. This unique combination makes UniSphere a necessary addition to the current market.
+
+
+## User Types:
+### Students
+Description: Primary users seeking academic resources, engaging in discussions, asking questions, collaborating on projects, and interacting with peers.
+
+
+Role: Access and download study materials, initiate or participate in discussions, create study groups, rate and review resources, and more.
+
+
+### Administrators
+Description: Behind-the-scenes managers responsible for ensuring the platform’s smooth operation, which control over all aspects of the platform.
+
+
+Role: User management, including adding or removing users and assigning roles, addressing major technical glitches, managing partnerships or integrations, and overseeing the overall functioning of the platform.
+User Stories:
+As a student, I want to…
+easily register and create a profile so that I can access study resources.
+search and download relevant study materials so that I can prepare for my exams.
+join or initiate discussions on topics I'm interested in so that I can understand concepts better.
+rate and review resources so that others can benefit from my feedback and make informed choices
+create or join study groups so that I can collaborate with peers.
+
+
+As an administrator, I want to…
+manage user accounts, assigning roles and permissions so that the platform runs smoothly.
+handle technical issues and oversee updates so that the platform remains up-to-date and bug-free.
+analyze user activity and platform performance so that necessary improvements can be implemented.
