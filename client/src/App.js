@@ -6,6 +6,7 @@ import ShowPostPage from "./pages/ShowPostPage";
 import AboutUsPage from "./pages/AboutUsPage";
 import LoginPage from "./pages/LoginPage";
 import SignUpPage from "./pages/SignUpPage";
+import HomePage from "./pages/HomePage";
 
 import "./App.css";
 
@@ -23,6 +24,21 @@ function Navigation(props) {
             </NavLink>
           </li>
           <li className="nav-item">
+            <NavLink className="nav-link" to="/login">
+              Login
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/signup">
+              Signup
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/home">
+              Home
+            </NavLink>
+          </li>
+          <li className="nav-item">
             <NavLink className="nav-link" to="/about-us">
               About Us
             </NavLink>
@@ -35,23 +51,30 @@ function Navigation(props) {
 
 function App() {
   return (
+    /*
     <div>
-    <LoginPage/>
-    <SignUpPage/>
+      <LoginPage/>
+      <SignUpPage/>
     </div>
-    // <BrowserRouter>
-    //   <Navigation />
-    //   <div className="container-xl text-center">
-    //     <div className="row justify-content-center">
-    //       <Routes>
-    //         <Route path="/posts/new" element={<PostFormPage />} />
-    //         <Route path="/posts/:id" element={<ShowPostPage />} />
-    //         <Route path="/about-us" element={<AboutUsPage />} />
-    //         <Route path="/" element={<PostsListPage />} />
-    //       </Routes>
-    //     </div>
-    //   </div>
-    // </BrowserRouter>
+    */
+
+     <BrowserRouter>
+       <Navigation />
+       <div className="container-xl text-center">
+         <div className="row justify-content-center">
+           <Routes>
+             <Route path="/posts/new" element={<PostFormPage />} />
+             <Route path="/posts/:id" element={<ShowPostPage />} />
+             <Route path="/about-us" element={<AboutUsPage />} />
+             <Route path="/" element={<PostsListPage />} />
+             
+             <Route path="/login" element={<LoginPage />} />
+             <Route path="/signup" element={<SignUpPage />} />
+             <Route path="/home" element={<HomePage />} />
+           </Routes>
+         </div>
+       </div>
+     </BrowserRouter>
   );
 }
 

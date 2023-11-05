@@ -1,1 +1,59 @@
 /* Add custom CSS here */
+.homepage {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: #0055B7; /* Adjust color to match the design */
+  }
+  
+  .menu-button {
+    background: none;
+    border: none;
+    color: white;
+    padding: 0.5em 1em;
+    margin-right: 1em;
+    font-size: 1em;
+  }
+  
+  .login-button {
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+  }
+  
+  .main-content {
+    text-align: center;
+    padding: 2em;
+  }
+  
+  .title {
+    font-size: 4em;
+    color: #0055B7; /* Adjust color to match the design */
+  }
+  
+  .title-accent {
+    color: red; /* Adjust color to match the design */
+  }
+  
+  .tagline {
+    font-size: 2em;
+    margin-bottom: 2em;
+  }
+  
+  
+  .image-container {
+    /* Placeholder for image styling */
+  }
+  
+
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
