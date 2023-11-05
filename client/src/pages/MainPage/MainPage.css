@@ -1,0 +1,52 @@
+**MainPage.css**
+.container {
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  display: grid;
+  grid-template-areas: 
+    "header header"
+    "main sidebar";
+  grid-gap: 20px;
+}
+
+header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 2em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li {
+  padding: 5px;
+}
+
+nav button {
+  padding: 5px 10px;
+}
+
+main {
+  grid-area: main;
+}
+
+.courses-section {
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #f9f9f9;
+  padding: 20px;
+}

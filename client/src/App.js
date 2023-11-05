@@ -7,6 +7,7 @@ import AboutUsPage from "./pages/AboutUsPage";
 import LoginPage from "./pages/LoginPage";
 import SignUpPage from "./pages/SignUpPage";
 import HomePage from "./pages/HomePage";
+import MainPage from "./pages/MainPage/MainPage";
 
 import "./App.css";
 
@@ -71,6 +72,7 @@ function App() {
              <Route path="/login" element={<LoginPage />} />
              <Route path="/signup" element={<SignUpPage />} />
              <Route path="/home" element={<HomePage />} />
+             <Route path="/main" element={<MainPage />} />
            </Routes>
          </div>
        </div>
