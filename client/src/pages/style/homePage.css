@@ -1,0 +1,112 @@
+.homepage {
+    background-color: #234DB9;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #333;
+    width: 30vw;
+    height: 100vh;
+  }
+  
+  .topContainer {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-end; 
+    width: 100vw;
+    padding: 1em;
+    background-color: rgb(0, 51, 161);
+  }
+  
+  .menu-button {
+    background: none;
+    border: none;
+    color: white;
+    text-align: right;
+    margin-right: 1em;
+    font-size: 1em;
+  }
+  
+  .login-button,
+  .signup-button {
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 10px; 
+  }
+  
+  .login-button:hover,
+  .signup-button:hover {
+    background-color: #ff9900;
+  }
+  
+  .mainContainer {
+    text-align: center;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .logoContainer {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .title {
+    font-size: 4em;
+    color: lightgray;
+    font-weight: 700;
+  }
+  
+  .secondTitle {
+    font-size: 4em;
+    color: orange;
+    font-weight: 700;
+  }
+  
+  .tagline {
+    font-size: 2em;
+    margin-bottom: 2em;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain; 
+    margin-left: 75dvh;
+  }
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
