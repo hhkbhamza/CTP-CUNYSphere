@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import './News.css'; // Your CSS file to style the news page
+import "../pages/style/NewsPage.css";
 
 const NewsPage = () => {
   // This would be populated by your CMS or API in a real application

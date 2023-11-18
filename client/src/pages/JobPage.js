@@ -1,5 +1,5 @@
 import React from 'react';
-import "../pages/style/jobPage.css";
+import "../pages/style/JobPage.css";
 
 function JobPage() {
     return (

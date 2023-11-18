@@ -1,7 +1,9 @@
-.loginContainer {
+/* signuppage.css */
+.signupContainer {
     display: flex;
-    height: 100vh; 
+    height: 100vh;
     font-family: Arial, sans-serif;
+    flex-direction: row
 }
 
 .leftSide, .rightSide {
@@ -13,7 +15,7 @@
 }
 
 .leftSide {
-    background-color: #234DB9; 
+    background-color: #234DB9;
     color: white;
 }
 
@@ -23,13 +25,14 @@
 
 .rightSide h1 {
     font-weight: 700;
-    font-size: 5em;
+    font-size: 2em;
     padding-bottom: 80px;
 }
 
 .title h1 {
     margin: 0;
     font-size: 2em;
+    line-height: 1.2;
     color: white;
 }
 
@@ -58,18 +61,17 @@
   }
   
 
-.noAccount {
+.yesAccount {
     margin-top: 20px;
     text-align: center;
 }
 
-.noAccount p {
+.yesAccount p {
     color: #D5E3F1;
     font-size: 40%;
     margin-top: 50px;
 }
-
-.noAccount p:last-child {
+.yesAccount p:last-child {
     color: navy;
     font-weight: bold;
     font-size: 30%;
@@ -87,22 +89,23 @@ form label {
     display: block;
     margin-bottom: 5px;
     color: #333;
-
 }
 
-form input[type="email"], form input[type="password"] {
+form input[type="email"],
+form input[type="password"],
+form select {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 form button {
     width: 100%;
     padding: 10px;
-    background-color: #004B8D; 
+    background-color: #004B8D;
     color: white;
     border: none;
     border-radius: 5px;
@@ -111,5 +114,5 @@ form button {
 }
 
 form button:hover {
-    background-color: #003366; 
-  }
+    background-color: #003366;
+}
