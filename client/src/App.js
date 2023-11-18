@@ -4,12 +4,12 @@ import PostFormPage from "./pages/PostFormPage";
 import ShowPostPage from "./pages/ShowPostPage";
 import AboutUsPage from "./pages/AboutUsPage";
 import LoginPage from "./pages/LoginPage";
-import SignUpPage from "./pages/SignUpPage";
+import SignupPage from "./pages/SignupPage";
 import HomePage from "./pages/HomePage";
 import JobPage from "./pages/JobPage";
 import NewsPage from "./pages/NewsPage";
 
-import "./App.css";
+import "../src/pages/style/App.css";
 
 function Navigation(props) {
   return (
@@ -47,21 +47,19 @@ function Navigation(props) {
   );
 } 
 
-
-
 function App() {
   return (
     /*
     <div>
       <LoginPage/>
-      <SignUpPage/>
+      <SignupPage/>
     </div>
     */
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LoginPage />} />
-        <Route path="/signup" element={<SignUpPage />} />
+        <Route path="/signup" element={<SignupPage />} />
       </Routes>
       <Navigation />
       <div className="container-xl text-center">
@@ -70,7 +68,7 @@ function App() {
             <Route path="/posts/new" element={<PostFormPage />} />
             <Route path="/posts/:id" element={<ShowPostPage />} />
             <Route path="/about-us" element={<AboutUsPage />} />
-             <Route path="/login" element={<LoginPage />} />
+            <Route path="/login" element={<LoginPage />} />
             <Route path="/job" element={<JobPage />} />
             <Route path="/news" element={<NewsPage />} />
           </Routes>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "../pages/style/logInPage.css";
+import "../pages/style/LoginPage.css";
 
 function LoginPage() {
   const [email, setEmail] = useState("");
@@ -23,8 +23,15 @@ function LoginPage() {
     <div className="loginContainer">
       <div className="leftSide">
         <div className="title">
-          <h1>CU<br></br>NY</h1>
-          <h1>Sphere</h1>
+          <h1 className="firstTitle">CU<br></br>NY</h1>
+          <h1 className="secondTitle">
+            <span className="text-wrapper-1">S</span>
+            <span className="text-wrapper-2">p</span>
+            <span className="text-wrapper-3">h</span>
+            <span className="text-wrapper-4">e</span>
+            <span className="text-wrapper-5">r</span>
+            <span className="text-wrapper-6">e</span>
+          </h1>
           <div className="noAccount">
             <p>Not a member?</p>
             <p className="signup" onClick={handleSignupClick} >Sign Up</p>
