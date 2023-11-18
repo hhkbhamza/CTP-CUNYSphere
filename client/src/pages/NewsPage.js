@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "../pages/style/NewsPage.css";
+import NavBar from "../components/NavBar.js";
 
 const NewsPage = () => {
   // This would be populated by your CMS or API in a real application
@@ -16,6 +17,7 @@ const NewsPage = () => {
 
   return (
     <div className="news-container">
+      <NavBar/>
       <h1 className="news-header">Latest News at CUNY</h1>
       <section className="news-articles">
         {newsArticles.map((article, index) => (

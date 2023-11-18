@@ -1,0 +1,31 @@
+.courses-page {
+    background-color: white;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .courses-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .courses-table th,
+  .courses-table td {
+    border: 1px solid #b8daff;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .courses-table th {
+    background-color: #e7f5ff;
+    color: #0056b3;
+  }
+  
+  .courses-table tbody tr:nth-child(odd) {
+    background-color: #f8f9fa;
+  }
+  
+  .courses-table tbody tr:hover {
+    background-color: #e7f5ff;
+  }

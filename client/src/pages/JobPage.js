@@ -1,8 +1,11 @@
 import React from 'react';
 import "../pages/style/JobPage.css";
+import NavBar from "../components/NavBar.js";
 
 function JobPage() {
     return (
+        <div>
+        <NavBar/>
         <nav>
             <ul className="navbar">
                 <li className="dropdown">
@@ -24,6 +27,7 @@ function JobPage() {
                 <li><a className="jobDetails" href="#">About</a></li>
             </ul>
         </nav>
+        </div>
     );
 }
 

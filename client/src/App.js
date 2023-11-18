@@ -4,10 +4,11 @@ import PostFormPage from "./pages/PostFormPage";
 import ShowPostPage from "./pages/ShowPostPage";
 import AboutUsPage from "./pages/AboutUsPage";
 import LoginPage from "./pages/LoginPage";
-import SignupPage from "./pages/SignupPage";
+import SignUpPage from "./pages/SignUpPage";
 import HomePage from "./pages/HomePage";
 import JobPage from "./pages/JobPage";
 import NewsPage from "./pages/NewsPage";
+import CoursePage from "./pages/CoursePage";
 
 import "../src/pages/style/App.css";
 
@@ -59,9 +60,9 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LoginPage />} />
-        <Route path="/signup" element={<SignupPage />} />
+        <Route path="/signup" element={<SignUpPage />} />
       </Routes>
-      <Navigation />
+      
       <div className="container-xl text-center">
         <div className="row justify-content-center">
           <Routes>
@@ -71,6 +72,7 @@ function App() {
             <Route path="/login" element={<LoginPage />} />
             <Route path="/job" element={<JobPage />} />
             <Route path="/news" element={<NewsPage />} />
+            <Route path="/courses" element={<CoursePage />} />
           </Routes>
         </div>
       </div>

@@ -1,9 +1,11 @@
 import React from 'react';
 import './MainPage.css';
+import NavBar from '../components/NavBar'
 
 const MainPage = () => {
   return (
     <div className="container">
+      <NavBar/>
       <header>
         <h1>Main Page</h1>
         <nav>

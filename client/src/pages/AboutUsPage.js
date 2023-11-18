@@ -1,9 +1,11 @@
 import React from "react";
 import "../pages/style/AboutUsPage.css";
+import NavBar from "../components/NavBar.js";
 
 function AboutUsPage(props) {
   return (
     <div className="aboutUsPage">
+      <NavBar/>
       <div className="col text-center">
         <h2 className="mb-3">About CUNY Sphere</h2>
         <p className="mb-5">
@@ -19,7 +21,7 @@ function AboutUsPage(props) {
         <h2 className="mb-3">About CUNY Crafters</h2>
         <div className="row">
           <div className="col-lg-6">
-            <img src="../Amir.jpeg"></img> <br></br>
+            <img src="../Amir.jpeg" className="about_img"></img> <br></br>
             <h3>Amir Hamza</h3>
             <p>Software Engineer</p>
             <a href="https://www.linkedin.com/in/amirhamza1/">LinkedIn</a>
@@ -31,7 +33,7 @@ function AboutUsPage(props) {
             </p>
           </div>
           <div className="col-lg-6">
-            <img src="../Benjamin.jpeg"></img> <br></br>
+            <img src="../Benjamin.jpeg" className="about_img"></img> <br></br>
             <h3>Benjamin Zhang</h3>
             <p>Software Engineer</p>
             <a href="https://www.linkedin.com/in/benjamin-z-b07229240/">
@@ -45,7 +47,7 @@ function AboutUsPage(props) {
             </p>
           </div>
           <div className="col-lg-6">
-            <img src="../Dahyeon.jpg"></img> <br></br>
+            <img src="../Dahyeon.jpg" className="about_img"></img> <br></br>
             <h3>Dahyeon Park</h3>
             <p>Software Engineer</p>
             <a href="https://www.linkedin.com/in/dahyeon-park/">LinkedIn</a>
@@ -57,7 +59,7 @@ function AboutUsPage(props) {
             </p>
           </div>
           <div className="col-lg-6">
-            <img src="../Omar.jpeg"></img> <br></br>
+            <img src="../Omar.jpeg" className="about_img"></img> <br></br>
             <h3>Omar Abdullah</h3>
             <p>Software Engineer</p>
             <a href="https://www.linkedin.com/in/omar-abdullah-7719201ab/">

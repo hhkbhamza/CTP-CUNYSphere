@@ -2,7 +2,7 @@
   "development": {
     "username": "ctp_user",
     "password": "ctp_pass",
-    "database": "ctp_appdb_development",
+    "database": "cuny_sphere",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },

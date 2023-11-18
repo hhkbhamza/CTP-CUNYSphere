@@ -3,10 +3,11 @@
 
 }
 
-img {
+.about_img {
     height: 50%;
     width: 50%;
-    overflow: hiddn;
+    overflow: hidden;
+    border-radius: 50%;
 }
 
 
