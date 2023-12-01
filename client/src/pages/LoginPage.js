@@ -22,7 +22,7 @@ function LoginPage() {
   return (
     <div className="loginContainer">
       <div className="leftSide">
-        <div className="title">
+        {/* <div className="title">
           <h1 className="firstTitle">CU<br></br>NY</h1>
           <h1 className="secondTitle">
             <span className="text-wrapper-1">S</span>
@@ -32,11 +32,12 @@ function LoginPage() {
             <span className="text-wrapper-5">r</span>
             <span className="text-wrapper-6">e</span>
           </h1>
-          <div className="noAccount">
+        </div> */}
+        <img src="../logo.png"></img>
+        <div className="noAccount">
             <p>Not a member?</p>
             <p className="signup" onClick={handleSignupClick} >Sign Up</p>
           </div>
-        </div>
       </div>
       <div className="rightSide">
         <h1>Welcome!</h1>
