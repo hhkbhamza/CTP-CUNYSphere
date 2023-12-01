@@ -1,9 +1,8 @@
-/* signuppage.css */
 .signupContainer {
     display: flex;
     height: 100vh;
     font-family: Arial, sans-serif;
-    flex-direction: row
+    flex-direction: row;
 }
 
 .leftSide, .rightSide {
@@ -15,7 +14,7 @@
 }
 
 .leftSide {
-    background-color: #234DB9;
+    background-color: #0033a1;
     color: white;
 }
 
@@ -38,28 +37,27 @@
 
 .text-wrapper-1 {
     color: #ed1c24;
-  }
-  
-  .text-wrapper-2 {
+}
+
+.text-wrapper-2 {
     color: #477aff;
-  }
-  
-  .text-wrapper-3 {
+}
+
+.text-wrapper-3 {
     color: #ff9b00;
-  }
-  
-  .text-wrapper-4 {
+}
+
+.text-wrapper-4 {
     color: #ffc700;
-  }
-  
-  .text-wrapper-5 {
+}
+
+.text-wrapper-5 {
     color: #8661f1;
-  }
-  
-  .text-wrapper-6 {
+}
+
+.text-wrapper-6 {
     color: #96e894;
-  }
-  
+}
 
 .yesAccount {
     margin-top: 20px;
@@ -71,6 +69,7 @@
     font-size: 40%;
     margin-top: 50px;
 }
+
 .yesAccount p:last-child {
     color: navy;
     font-weight: bold;
@@ -115,4 +114,30 @@ form button {
 
 form button:hover {
     background-color: #003366;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+    .signupContainer {
+        flex-direction: column;
+    }
+
+    .leftSide, .rightSide {
+        width: 100%;
+    }
+
+    .title h1 {
+        font-size: 1.5em;
+    }
+
+    .rightSide h1 {
+        font-size: 1.5em;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+    }
+
+    form {
+        width: 100%;
+    }
 }
