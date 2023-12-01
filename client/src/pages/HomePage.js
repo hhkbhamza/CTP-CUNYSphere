@@ -14,11 +14,13 @@ function HomePage() {
     navigate("/signup");
   };
 
+  
   const showLoginAndSignUp = true;
 
   return (
     <div className="homepage">
       <div className="topContainer">
+      <img src="../cuny-logo.jpeg" alt="CUNY Logo" className="logoImg" />
         <div className="menu">
           <button className="menu-button">
             <a
@@ -36,13 +38,14 @@ function HomePage() {
               CUNY Blackboard
             </a>
           </button>
-        </div>
-        <button className="login-button" onClick={handleLoginClick}>
+          <button className="login-button" onClick={handleLoginClick}>
           Log In
         </button>
         <button className="signup-button" onClick={handleSignupClick}>
           Sign Up
         </button>
+        </div>
+        
       </div>
 
       <div className="contentContainer">
