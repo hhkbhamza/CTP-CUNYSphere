@@ -43,7 +43,7 @@ function SignupPage() {
   return (
     <div className="signupContainer">
       <div className="leftSide">
-        <div className="title">
+        {/* <div className="title">
           <h1>CU<br></br>NY</h1>
           <h1 className="secondTitle">
             <span className="text-wrapper-1">S</span>
@@ -59,7 +59,8 @@ function SignupPage() {
               Log In
             </p>
           </div>
-        </div>
+        </div> */}
+        <img src="../logo.png"></img>
       </div>
       <div className="rightSide">
         <h1>Sign Up</h1>
