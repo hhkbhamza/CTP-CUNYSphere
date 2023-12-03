@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, NavLink } from "react-router-dom";
+import AuthButton from "./AuthButton";
 
 function NavBar(props) {
   return (
@@ -32,6 +33,7 @@ function NavBar(props) {
             </li>
             <li className="nav-item"><button>Sign out</button></li>
           </ul>
+          <AuthButton />
         </div>
       </nav>
   )

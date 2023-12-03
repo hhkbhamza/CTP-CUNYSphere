@@ -1,17 +1,64 @@
 .aboutUsPage {
-    background-color: #D5E3F1;
-
-}
-
-.about_img {
-    height: 50%;
-    width: 50%;
-    overflow: hidden;
-    border-radius: 50%;
-}
-
-
-/* .col-lg-6 {
-    background-color: #D5E3F1;
-    gap:20px;
-} */
+    color: black;
+    background-color: #F8F9FA; /* Light background color for the entire page */
+    padding: 40px; /* Add padding for better spacing */
+    text-align: center; /* Center-align the content */
+    font-size: 1.5em;
+  }
+   .col {
+    margin-bottom: 40px; /* Add margin to separate each section */
+  }
+   h2 {
+    font-weight: 700;
+    color: #0033a1; /* Professional blue for headings */
+  }
+ 
+ 
+  .about_img {
+    height: 300px; /* Set a fixed height for all images */
+    width: 300px; /* Set a fixed width for all images */
+    object-fit: fill; /* Maintain aspect ratio and cover the entire container */
+    /* border-radius: 50%;  */
+    margin-bottom: 20px; /* Add some space below images */
+    margin-top: 20px; /* Add some space below images */
+  }
+   .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center-align the columns */
+    gap: 20px
+  }
+   .col-lg-6 {
+    flex-basis: calc(50% - 20px); /* Adjust width with some gap between columns */
+    margin-bottom: 20px; /* Add margin at the bottom of each column */
+    background-color: #ffffff; /* White background color for each column */
+    padding: 20px;
+    border-radius: 10px; /* Add a slight border-radius for a softer look */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+  }
+   /* Style links */
+  a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+   a:hover {
+    text-decoration: underline;
+  }
+   /* Additional styling for paragraphs */
+  p {
+    color: #495057;
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+ 
+ 
+  .linkedInIcon{
+    margin-right: 15px;
+  }
+   /* Responsive styling for smaller screens */
+  @media (max-width: 768px) {
+    .col-lg-6 {
+      flex-basis: 100%; /* Make columns full-width on smaller screens */
+    }
+  }
+ 

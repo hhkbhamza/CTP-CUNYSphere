@@ -9,6 +9,8 @@ import HomePage from "./pages/HomePage";
 import JobPage from "./pages/JobPage";
 import NewsPage from "./pages/NewsPage";
 import CoursePage from "./pages/CoursePage";
+import { AuthProvider } from "./context/AuthContext";
+import PrivateRoute from "./components/PrivateRouteRequiresAuth";
 
 import "../src/pages/style/App.css";
 
@@ -56,6 +58,7 @@ function App() {
       <SignupPage/>
     </div>
     */
+   <AuthProvider>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -66,17 +69,17 @@ function App() {
       <div className="container-xl text-center">
         <div className="row justify-content-center">
           <Routes>
-            <Route path="/posts/new" element={<PostFormPage />} />
-            <Route path="/posts/:id" element={<ShowPostPage />} />
-            <Route path="/about-us" element={<AboutUsPage />} />
-            <Route path="/login" element={<LoginPage />} />
-            <Route path="/job" element={<JobPage />} />
-            <Route path="/news" element={<NewsPage />} />
-            <Route path="/courses" element={<CoursePage />} />
+            {/* <Route path="/posts/new" element={<PostFormPage />} />
+            <Route path="/posts/:id" element={<ShowPostPage />} /> */}
+            <Route path="/about-us" element={<PrivateRoute>{<AboutUsPage />}</PrivateRoute>}/>
+            <Route path="/job" element={<PrivateRoute>{<JobPage />}</PrivateRoute>}/>
+            <Route path="/news" element={<PrivateRoute>{<NewsPage />}</PrivateRoute>}/>
+            <Route path="/courses" element={<PrivateRoute>{<CoursePage />}</PrivateRoute>}/>
           </Routes>
         </div>
       </div>
     </BrowserRouter>
+    </AuthProvider>
   );
 }
 

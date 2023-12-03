@@ -1,5 +1,7 @@
 const express = require("express");
+const expressSession = require("express-session");
 const morgan = require("morgan");
+const passport = require("./middlewares/authentication");
 const path = require("path");
 const db = require("./models");
 const app = express();
@@ -7,6 +9,17 @@ const PORT = process.env.PORT;
 
 // this lets us parse 'application/json' content in http requests
 app.use(express.json());
+
+// setup passport and session cookies
+app.use(
+  expressSession({
+    secret: process.env.SESSION_SECRET,
+    resave: false,
+    saveUninitialized: true,
+  })
+);
+app.use(passport.initialize());
+app.use(passport.session());
 
 // add http request logging to help us debug and audit app use
 const logFormat = process.env.NODE_ENV === "production" ? "combined" : "dev";
@@ -35,3 +48,32 @@ if (PORT) {
 } else {
   console.log("===== ERROR ====\nCREATE A .env FILE!\n===== /ERROR ====");
 }
+
+
+// const express = require("express");
+// const expressSession = require("express-session")
+// const morgan = require("morgan");
+// const passport = require("./middlewares/authentication")
+// const path = require("path");
+// const db = require("./models");
+// const app = express();
+
+
+// require('dotenv').config();
+
+
+// const PORT = process.env.PORT;
+
+
+// // this lets us parse 'application/json' content in http requests
+// app.use(express.json());
+
+
+// app.use(
+//   expressSession({
+//     secret: process.env.SESSION_SECRET,
+//     resave: false,
+//     saveUninitialized: false,
+//   })
+// )
+// app.use(passport.initialize())

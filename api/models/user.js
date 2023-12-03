@@ -1,31 +1,60 @@
-const bcrypt = require('bcryptjs');
+const { Model } = require("sequelize");
+const bcrypt = require("bcryptjs");
+
 
 module.exports = (sequelize, DataTypes) => {
-  const User = sequelize.define('User', {
-    email: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      unique: true,
-      validate: {
-        isEmail: true,
+  class User extends Model {
+    getFullname() {
+      return [this.firstName, this.lastName].join(" ");
+    }
+  }
+
+
+  User.init(
+    {
+      firstName: { type: DataTypes.STRING },
+      lastName: { type: DataTypes.STRING },
+      college: { type: DataTypes.STRING},
+      email: {
+        type: DataTypes.STRING,
+        unique: true,
+        allowNull: false,
+        validate: {
+          isEmail: true,
+        },
       },
+      passwordHash: { type: DataTypes.STRING },
+      password: {
+        type: DataTypes.VIRTUAL,
+        validate: {
+          isLongEnough: (val) => {
+            if (val.length < 7) {
+              throw new Error("Please choose a longer password");
+            }
+          },
+        },
+      },
+     
     },
-    password: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-  });
+    {
+      sequelize,
+      modelName: "User",
+    }
+  );
 
-  // Hash password before saving
-  User.beforeCreate((user) => {
-    const salt = bcrypt.genSaltSync(10);
-    user.password = bcrypt.hashSync(user.password, salt);
-  });
 
-  // Method to compare hashed passwords
-  User.prototype.comparePassword = function (password) {
-    return bcrypt.compareSync(password, this.password);
+  User.associate = (models) => {
+    // associations can be defined here
   };
+
+
+  User.beforeSave((user, options) => {
+    if (user.password) {
+      user.passwordHash = bcrypt.hashSync(user.password, 10);
+    }
+  });
+
 
   return User;
 };
+
