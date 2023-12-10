@@ -6,6 +6,13 @@ const path = require("path");
 const db = require("./models");
 const app = express();
 const PORT = process.env.PORT;
+const cors = require('cors');
+
+// Use CORS middleware
+app.use(cors());
+
+// this lets us parse 'application/json' content in http requests
+app.use(express.json());
 
 // this lets us parse 'application/json' content in http requests
 app.use(express.json());
@@ -48,32 +55,3 @@ if (PORT) {
 } else {
   console.log("===== ERROR ====\nCREATE A .env FILE!\n===== /ERROR ====");
 }
-
-
-// const express = require("express");
-// const expressSession = require("express-session")
-// const morgan = require("morgan");
-// const passport = require("./middlewares/authentication")
-// const path = require("path");
-// const db = require("./models");
-// const app = express();
-
-
-// require('dotenv').config();
-
-
-// const PORT = process.env.PORT;
-
-
-// // this lets us parse 'application/json' content in http requests
-// app.use(express.json());
-
-
-// app.use(
-//   expressSession({
-//     secret: process.env.SESSION_SECRET,
-//     resave: false,
-//     saveUninitialized: false,
-//   })
-// )
-// app.use(passport.initialize())

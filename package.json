@@ -18,11 +18,13 @@
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "express-session": "^1.17.3",
+    "firebase": "^10.7.1",
     "morgan": "^1.10.0",
     "passport": "^0.6.0",
     "passport-local": "^1.0.0",
     "pg": "^8.11.3",
     "pg-hstore": "^2.3.4",
+    "react-firebase-hooks": "^5.1.1",
     "sequelize": "^6.33.0"
   },
   "devDependencies": {

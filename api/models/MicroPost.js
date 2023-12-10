@@ -1,8 +1,10 @@
 "use strict";
 const { Model } = require("sequelize");
 
+
 module.exports = (sequelize, DataTypes) => {
   class MicroPost extends Model {}
+
 
   MicroPost.init(
     {
@@ -12,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
           len: [3, 250],
           notEmpty: true,
         },
-      },
+      }
     },
     {
       sequelize,
@@ -20,9 +22,11 @@ module.exports = (sequelize, DataTypes) => {
     }
   );
 
+
   MicroPost.associate = (models) => {
     // associations can be defined here
   };
+
 
   return MicroPost;
 };

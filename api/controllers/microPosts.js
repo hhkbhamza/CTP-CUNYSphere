@@ -21,10 +21,11 @@ router.get("/", (req, res) => {
   MicroPost.findAll({}).then((allPosts) => res.json(allPosts));
 });
 
-router.post("/", (req, res) => {
-  let { content } = req.body;
-
-  MicroPost.create({ content })
+router.post("/", passport.isAuthenticated(), (req, res) => {
+  MicroPost.create({
+    content: req.body.content,
+    filePath: req.body.filePath,
+  })
     .then((newPost) => {
       res.status(201).json(newPost);
     })
@@ -44,7 +45,7 @@ router.get("/:id", (req, res) => {
   });
 });
 
-router.put("/:id", (req, res) => {
+router.put("/:id", passport.isAuthenticated(), (req, res) => {
   const { id } = req.params;
   MicroPost.findByPk(id).then((mpost) => {
     if (!mpost) {
@@ -52,6 +53,7 @@ router.put("/:id", (req, res) => {
     }
 
     mpost.content = req.body.content;
+    mpost.filePath = req.body.filePath;
     mpost
       .save()
       .then((updatedPost) => {
@@ -63,7 +65,7 @@ router.put("/:id", (req, res) => {
   });
 });
 
-router.delete("/:id", (req, res) => {
+router.delete("/:id", passport.isAuthenticated(), (req, res) => {
   const { id } = req.params;
   MicroPost.findByPk(id).then((mpost) => {
     if (!mpost) {

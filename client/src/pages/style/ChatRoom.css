@@ -1,0 +1,35 @@
+/* ChatRoom.css */
+
+main {
+    display: flex;
+    flex-direction: column-reverse; /* Stack messages vertically, and reverse order */
+    height: 100vh; /* Set a height to make the chat scrollable */
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+  
+  .message {
+    display: flex;
+    align-items: flex-start;
+    margin: 8px;
+  }
+  
+  .message img {
+    width: 40px; /* Adjust image width as needed */
+    height: 40px; /* Adjust image height as needed */
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  
+  .sent p {
+    background-color: #007bff;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+  }
+  
+  .received p {
+    background-color: #f0f0f0;
+    padding: 8px;
+    border-radius: 8px;
+  }
+  
