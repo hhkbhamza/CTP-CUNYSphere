@@ -1,15 +1,15 @@
 import { useState, useRef, useEffect } from 'react';
-import { appOne } from '../firebase';
+import { appTwo } from '../firebase';
 import { getDatabase, ref, get, push, onValue } from 'firebase/database';
 
-const databaseOne = getDatabase(appOne);
-const messagesRefOne = ref(databaseOne, 'messages');
+const databaseTwo = getDatabase(appTwo);
+const messagesRefTwo = ref(databaseTwo, 'messages');
 
-function ChatRoomOne() {
+function ChatRoomTwo() {
   const dummy = useRef();
   
-  // Use messagesRefOne directly without orderByChild
-  const query = messagesRefOne;
+  // Use messagesRefTwo directly without orderByChild
+  const query = messagesRefTwo;
 
   const [messages, setMessages] = useState([]);
   const [formValue, setFormValue] = useState('');
@@ -36,7 +36,7 @@ function ChatRoomOne() {
   const sendMessage = async (e) => {
     e.preventDefault();
 
-    await push(messagesRefOne, {
+    await push(messagesRefTwo, {
       text: formValue,
       createdAt: { '.sv': 'timestamp' }, // Use ServerValue.TIMESTAMP equivalent
     });
@@ -69,4 +69,4 @@ function ChatRoomOne() {
   );
 }
 
-export default ChatRoomOne;
+export default ChatRoomTwo;

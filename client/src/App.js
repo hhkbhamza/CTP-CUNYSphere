@@ -24,6 +24,8 @@ import 'firebase/compat/analytics';
 import 'firebase/compat/database';
 import ChatRoom from './components/ChatRoom';
 import ChatRoomOne from './components/ChatRoomOne';
+import ChatRoomTwo from './components/ChatRoomTwo';
+import ChatRoomThree from './components/ChatRoomThree';
 
 
 function Navigation(props) {
@@ -104,6 +106,8 @@ function App() {
               <Route path="/course" element={<PrivateRoute>{<CoursePage />}</PrivateRoute>} />
               <Route path="/course/chat/0" element={<PrivateRoute>{<ChatRoom />}</PrivateRoute>} />
               <Route path="/course/chat/1" element={<PrivateRoute>{<ChatRoomOne />}</PrivateRoute>} />
+              <Route path="/course/chat/2" element={<PrivateRoute>{<ChatRoomTwo />}</PrivateRoute>} />
+              <Route path="/course/chat/3" element={<PrivateRoute>{<ChatRoomThree />}</PrivateRoute>} />
             </Routes>
           </div>
         </div>
