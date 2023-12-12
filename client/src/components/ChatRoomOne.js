@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { appOne } from '../firebase';
-import { getDatabase, ref, get, push, onValue } from 'firebase/database';
+import { getDatabase, ref, push, onValue } from 'firebase/database';
+import { useAuth } from '../context/AuthContext';
 
 const databaseOne = getDatabase(appOne);
 const messagesRefOne = ref(databaseOne, 'messages');
@@ -8,16 +9,14 @@ const messagesRefOne = ref(databaseOne, 'messages');
 function ChatRoomOne() {
   const dummy = useRef();
   
-  // Use messagesRefOne directly without orderByChild
   const query = messagesRefOne;
 
   const [messages, setMessages] = useState([]);
   const [formValue, setFormValue] = useState('');
-
+  const auth = useAuth();
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // Use onValue to listen for real-time updates
         onValue(query, (snapshot) => {
           const data = snapshot.val();
           if (data) {
@@ -35,10 +34,11 @@ function ChatRoomOne() {
 
   const sendMessage = async (e) => {
     e.preventDefault();
-
+    const userFirstName = auth.user.firstName;
     await push(messagesRefOne, {
       text: formValue,
-      createdAt: { '.sv': 'timestamp' }, // Use ServerValue.TIMESTAMP equivalent
+      createdAt: { '.sv': 'timestamp' }, 
+      userFirstName: userFirstName,
     });
 
     setFormValue('');
@@ -50,7 +50,7 @@ function ChatRoomOne() {
       <main>
         {messages.map((msg, index) => (
           <div key={index} className="message">
-            <p>{msg.text}</p>
+            <p>{`${msg.userFirstName || 'Guest'}: ${msg.text}`}</p>
           </div>
         ))}
         <span ref={dummy}></span>

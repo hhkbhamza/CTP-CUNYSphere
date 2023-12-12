@@ -1,6 +1,8 @@
 import { useState, useRef, useEffect } from 'react';
 import { appThree } from '../firebase';
 import { getDatabase, ref, get, push, onValue } from 'firebase/database';
+import { useAuth } from '../context/AuthContext';
+
 
 const databaseThree = getDatabase(appThree);
 const messagesRefThree = ref(databaseThree, 'messages');
@@ -8,11 +10,11 @@ const messagesRefThree = ref(databaseThree, 'messages');
 function ChatRoomThree() {
   const dummy = useRef();
   
-  // Use messagesRefThree directly without orderByChild
   const query = messagesRefThree;
 
   const [messages, setMessages] = useState([]);
   const [formValue, setFormValue] = useState('');
+  const auth = useAuth();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -35,10 +37,11 @@ function ChatRoomThree() {
 
   const sendMessage = async (e) => {
     e.preventDefault();
-
+    const userFirstName = auth.user.firstName;
     await push(messagesRefThree, {
       text: formValue,
-      createdAt: { '.sv': 'timestamp' }, // Use ServerValue.TIMESTAMP equivalent
+      createdAt: { '.sv': 'timestamp' },
+      userFirstName: userFirstName,
     });
 
     setFormValue('');
@@ -50,7 +53,7 @@ function ChatRoomThree() {
       <main>
         {messages.map((msg, index) => (
           <div key={index} className="message">
-            <p>{msg.text}</p>
+            <p>{`${msg.userFirstName || 'Guest'}: ${msg.text}`}</p>
           </div>
         ))}
         <span ref={dummy}></span>

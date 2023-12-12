@@ -1,7 +1,8 @@
 import { useState, useRef, useEffect } from 'react';
 import { app } from '../firebase';
-import { getDatabase, ref, get, push, onValue } from 'firebase/database';
-import AuthButton from "./AuthButton";
+import { getDatabase, ref, push, onValue } from 'firebase/database';
+import { useAuth } from '../context/AuthContext';
+
 
 
 const database = getDatabase(app);
@@ -9,15 +10,15 @@ const messagesRef = ref(database, 'messages');
 
 function ChatRoom() {
   const dummy = useRef();
-  const query = messagesRef; // No need for orderByChild in the new SDK
+  const query = messagesRef;
 
   const [messages, setMessages] = useState([]);
   const [formValue, setFormValue] = useState('');
+  const auth = useAuth();
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // Use onValue to listen for real-time updates
         onValue(query, (snapshot) => {
           const data = snapshot.val();
           if (data) {
@@ -36,9 +37,13 @@ function ChatRoom() {
   const sendMessage = async (e) => {
     e.preventDefault();
 
+    // const userFirstName = auth.user ? auth.user.firstName || 'Guest' : 'Guest';
+    const userFirstName = auth.user.firstName;
+    console.log(userFirstName + 'hi');
     await push(messagesRef, {
       text: formValue,
-      createdAt: { '.sv': 'timestamp' }, // Use ServerValue.TIMESTAMP equivalent
+      createdAt: { '.sv': 'timestamp' },
+      userFirstName: userFirstName,
     });
 
     setFormValue('');
@@ -47,11 +52,10 @@ function ChatRoom() {
 
   return (
     <>
-    <AuthButton />
       <main>
         {messages.map((msg, index) => (
           <div key={index} className="message">
-            <p>{msg.text}</p>
+            <p>{`${msg.userFirstName || 'Guest'}: ${msg.text}`}</p>
           </div>
         ))}
         <span ref={dummy}></span>
@@ -71,3 +75,5 @@ function ChatRoom() {
 }
 
 export default ChatRoom;
+
+

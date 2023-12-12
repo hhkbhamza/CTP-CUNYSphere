@@ -19,7 +19,7 @@ const AuthButton = () => {
   const logout = () => {
     auth.signout().then(() => navigate("/"));
   };
-
+// console.log(auth.user.firstName);
   return (
     <div className="text-white">
       Welcome! {auth.user.firstName}
