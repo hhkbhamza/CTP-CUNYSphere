@@ -1,0 +1,447 @@
+.chat-room {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #282c34;
+  color: #e1e1e1;
+  font-family: 'Arial', sans-serif;
+}
+
+
+.messages-container {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+  padding-bottom: 60px;
+}
+
+
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+
+.message.sent {
+  align-items: flex-end;
+}
+
+
+.message.received {
+  align-items: flex-start;
+}
+
+
+.message-name {
+  font-size: 0.85rem;
+  color: #ccc;
+  align-self: flex-end;
+}
+
+
+.message-content {
+  max-width: 70%;
+  word-wrap: break-word;
+  margin-bottom: 4px;
+}
+
+
+.message-content p {
+  padding: 10px 15px;
+  border-radius: 18px;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+
+.message.sent .message-content p {
+  background-color: #007bff;
+  color: white;
+}
+
+
+.message.received .message-content p {
+  background-color: #333;
+  color: white;
+}
+
+
+.message-input-area {
+  display: flex;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #1a1a1a;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.message-input {
+  flex-grow: 1;
+  padding: 15px 20px;
+  border-radius: 20px;
+  background-color: #333;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  margin-right: 10px;
+  width: 80%;
+}
+
+
+.send-button {
+  padding: 6px 12px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #2a2a2a;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 4px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+
+
+
+
+.message-input-area {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #1a1a1a;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+
+.message-input {
+  width: calc(100% - 60px);
+  margin-right: 10px;
+
+
+}
+
+
+.send-button {
+  /* Reduced size further if necessary */
+  padding: 6px 12px;
+  /* ... other styles ... */
+}
+
+
+/* Adjust the padding of the messages container to account for the fixed input area */
+.messages-container {
+  padding-bottom: 70px; /* Increase this if your input area is taller */
+  /* ... other styles ... */
+}
+
+
+/* Add margin between messages from different users */
+.message + .message {
+  margin-top: 20px; /* This adds space between messages */
+}
+
+
+
+
+
+
+.chat-room {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #282c34;
+  color: #e1e1e1;
+  font-family: 'Arial', sans-serif;
+}
+
+
+.messages-container {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+  padding-bottom: 80px; /* Adjusted to prevent overlap with the fixed input area */
+}
+
+
+.message {
+  display: flex;
+  margin-bottom: 20px; /* Increase space between messages */
+}
+
+
+.message.sent {
+  justify-content: flex-end; /* Aligns sent messages to the right */
+}
+
+
+.message.received {
+  justify-content: flex-start; /* Aligns received messages to the left */
+}
+
+
+.message-content {
+  max-width: 70%;
+  word-wrap: break-word;
+  margin-bottom: 4px; /* Space between message and name */
+}
+
+
+.message-content p {
+  padding: 10px 15px;
+  border-radius: 18px;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+
+.message.sent .message-content p {
+  background-color: #007bff;
+  color: white;
+}
+
+
+.message.received .message-content p {
+  background-color: #333;
+  color: white;
+}
+
+
+.message-input-area {
+  display: flex;
+  position: fixed; /* Fixed to bottom */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #1a1a1a;
+  padding: 10px;
+  align-items: center;
+  justify-content: center; /* Center the input and button */
+}
+
+
+.message-input {
+  padding: 15px 20px;
+  border-radius: 20px;
+  background-color: #333;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  flex-grow: 1; /* Allows input to fill space */
+  margin-right: 10px; /* Spacing between input and button */
+}
+
+
+.send-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+
+/* Rest of the styles remain the same */
+.chat-room {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #282c34;
+  color: #e1e1e1;
+  font-family: 'Arial', sans-serif;
+}
+
+
+.messages-container {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+  margin-bottom: 80px; /* Space for the input area */
+}
+
+
+.message {
+  display: flex;
+  justify-content: flex-start; /* Default to left for received messages */
+  margin-bottom: 20px; /* Space between messages */
+}
+
+
+.message.sent {
+  justify-content: flex-end; /* Aligns sent messages to the right */
+}
+
+
+.message.received {
+  justify-content: flex-start; /* Aligns received messages to the left */
+}
+
+
+.message-content {
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+
+.message-content p {
+  padding: 10px 15px;
+  border-radius: 18px;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+
+.message.sent .message-content p {
+  background-color: #007bff;
+  color: white;
+}
+
+
+.message.received .message-content p {
+  background-color: #333;
+  color: white;
+}
+
+
+.message-input-area {
+  display: flex;
+  position: fixed; /* Sticks to the bottom of the screen */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #1a1a1a;
+  padding: 10px;
+  align-items: center;
+}
+
+
+.message-input {
+  padding: 15px 20px;
+  border-radius: 20px;
+  background-color: #333;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  flex-grow: 1; /* Allows input to expand */
+  margin-right: 10px; /* Spacing between input and button */
+}
+
+
+.send-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #2a2a2a;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 4px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+
+
+/* ... other styles ... */
+
+
+.message-content {
+  max-width: 70%;
+  word-wrap: break-word;
+  margin-bottom: 4px; /* Space between message and name */
+}
+
+
+.message-content p {
+  padding: 12px 18px; /* Increase padding for larger appearance */
+  border-radius: 18px;
+  margin: 0;
+  font-size: 1.1rem; /* Increase font size for larger text */
+  line-height: 1.4; /* Adjust line height for better readability */
+}
+
+
+.message.sent .message-content p {
+  background-color: #007bff;
+  color: white;
+  font-size: 1.2rem; /* Slightly larger font size for sent messages */
+}
+
+
+/* ... other styles ... */
+
+
+.message-input-area {
+  display: flex;
+  position: fixed; /* Fixed to the bottom */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #1a1a1a;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between; /* This will place the button to the end */
+}
+
+
+.message-input {
+  flex-grow: 1; /* This will make the input expand */
+  padding: 15px 20px;
+  border-radius: 20px;
+  background-color: #333;
+  border: none;
+  color: white;
+  font-size: 1.1rem; /* Increase font size for the input field */
+  margin-right: 10px; /* Spacing between input and button */
+}
+
+
+.send-button {
+  /* Your current button styles */
+}

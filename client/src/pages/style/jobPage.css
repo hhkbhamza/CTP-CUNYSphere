@@ -1,55 +1,14 @@
-/* JobPage.css - Enhanced for Dropdowns */
-
-.navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #D5E3F1;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
+.background-image {
+  background-image: url('../../../public/Saly-23.png');
+  background-size: cover;
+  background-position: center;
+  height: 300px; /* Adjust the height as needed */
+  opacity: 0.5;
 }
 
-.navbar li {
-    position: relative;
-    margin: 0 15px;
-}
-
-.jobDetails {
-    display: block;
-    color: #234DB9;
-    padding: 14px 16px;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    transition: background-color 0.3s;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1;}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.jobDetails:hover, .dropbtn:hover {
-    color: white;
-    background-color: #234DB9;
-}
-
-.jobDetails:active {
-    background-color: #003366;
-    color: white;
+.resume-section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 20px;
 }

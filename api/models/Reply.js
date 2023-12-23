@@ -3,11 +3,14 @@ const { Model } = require("sequelize");
 
 
 module.exports = (sequelize, DataTypes) => {
-  class MicroPost extends Model {}
+  class Reply extends Model {}
 
 
-  MicroPost.init(
+  Reply.init(
     {
+      matching_id: {
+        type: DataTypes.INTEGER,
+      },
       content: {
         type: DataTypes.STRING,
         validate: {
@@ -15,21 +18,18 @@ module.exports = (sequelize, DataTypes) => {
           notEmpty: true,
         },
       },
-      fileName: {
-        type: DataTypes.STRING,
-      },
     },
     {
       sequelize,
-      modelName: "MicroPost",
+      modelName: "Reply",
     }
   );
 
 
-  MicroPost.associate = (models) => {
+  Reply.associate = (models) => {
     // associations can be defined here
   };
 
 
-  return MicroPost;
+  return Reply;
 };

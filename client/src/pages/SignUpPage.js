@@ -3,7 +3,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import "../pages/style/SignupPage.css";
 
-function SignupPage() {
+function SignUpPage() {
   const [userDetails, setUserDetails] = useState({
     firstName: "",
     lastName: "",
@@ -150,7 +150,7 @@ function SignupPage() {
   );
 }
 
-export default SignupPage;
+export default SignUpPage;
 
 // import React, { useState } from "react";
 // import { useNavigate } from "react-router-dom";

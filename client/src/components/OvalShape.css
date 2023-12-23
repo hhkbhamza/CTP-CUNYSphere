@@ -1,0 +1,33 @@
+.background {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 50vh; /* Adjust the value according to your design */
+  }
+  
+  .primaryView {
+    background-color: #ffffff;
+    width: 100%;
+  }
+  
+  
+  .ovalSection {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Add this line to center the content vertically */
+    background-color: #4646ff;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    width: 100%;
+  }
+  
+  .ourMissionText {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center; /* Add this line to center the text horizontally */
+  }

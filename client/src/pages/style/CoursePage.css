@@ -1,7 +1,9 @@
 .courses-page {
     background-color: white;
-    padding: 20px;
+    /* padding: 20px; */
     font-family: Arial, sans-serif;
+    /* margin-top: -20px; */
+    width: 100vw;
   }
   
   .courses-table {

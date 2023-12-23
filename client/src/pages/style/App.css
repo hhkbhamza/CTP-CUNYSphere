@@ -20,13 +20,13 @@
     font-size: 1em;
   }
   
-  .login-button {
+  /* .login-button {
     background-color: orange;
     border: none;
     color: white;
     padding: 0.5em 1em;
     border-radius: 20px;
-  }
+  } */
   
   .main-content {
     text-align: center;

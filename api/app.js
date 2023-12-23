@@ -14,9 +14,6 @@ app.use(cors());
 // this lets us parse 'application/json' content in http requests
 app.use(express.json());
 
-// this lets us parse 'application/json' content in http requests
-app.use(express.json());
-
 // setup passport and session cookies
 app.use(
   expressSession({

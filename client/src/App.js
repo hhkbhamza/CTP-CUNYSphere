@@ -17,6 +17,11 @@ import "../src/pages/style/App.css";
 import { AuthProvider } from "./context/AuthContext";
 import PrivateRoute from "./components/PrivateRouteRequiresAuth";
 import MainPage from "./pages/MainPage";
+
+//Upload files
+import UploadFile from "./pages/UploadFile";
+
+//Chatroom
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
@@ -79,17 +84,14 @@ function App() {
   return (
     <AuthProvider>
       <BrowserRouter>
-        <div className="container-fluid">
-          {/* <section>
-          <ChatRoom />
-          </section> */}
+        <div className="container-flui">
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/signup" element={<SignupPage />} />
           </Routes>
 
-          <div className="row justify-content-center">
+          <div className="justify-content-center">
             <Routes>
               <Route path="/main" element={<MainPage />} />
               <Route path="/about-us" element={<AboutUsPage />} />

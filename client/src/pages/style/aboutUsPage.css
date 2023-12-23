@@ -1,64 +1,148 @@
 .aboutUsPage {
-    color: black;
-    background-color: #F8F9FA; /* Light background color for the entire page */
-    padding: 40px; /* Add padding for better spacing */
-    text-align: center; /* Center-align the content */
-    font-size: 1.5em;
+  background: linear-gradient(#9198e5, #e66465);
+  text-align: center;
+  font-size: 1.5em;
+  position: relative;
+}
+
+/* .box {
+  --mask:
+    radial-gradient(34.99px at calc(100% - 48.00px) 50%, #000 99%, #0000 101%) 0 calc(50% - 60px) / 100% 120px,
+    radial-gradient(34.99px at calc(100% + 18.00px) 50%, #0000 99%, #000 101%) calc(100% - 30px) 50% / 100% 120px repeat-y;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}
+ */
+
+
+.missionWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.missionContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 
+.missionTextContainer {
+  max-width: 800px; 
+  margin: 0 auto;  
+} */
+.copyright {
+  margin-bottom: -20px;
+}
+
+.missionImage {
+  width: 100%;
+  /* Ensure the image takes 100% of the container width */
+  height: auto;
+  /* Maintain the image aspect ratio */
+  border-radius: 68% 32% 83% 17% / 53% 69% 31% 47%;
+}
+
+.col {
+  margin-bottom: 40px;
+}
+
+.aboutUsPageh2 {
+  padding-top: 70px;
+  font-weight: bold;
+  font-size: 8rem;
+  color: white;
+  opacity: 0.5;
+}
+
+.ourMission-P {
+  width: 100%;
+  justify-content: start;
+  text-align: left;
+  color: white;
+  line-height: 2;
+  font-size: 1.50rem;
+
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.teamDes {
+  flex-basis: calc(50% - 50px);
+  margin-bottom: 50px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  margin-top: 50px;
+  opacity: 0.6;
+}
+
+
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+.description {
+  line-height: 1.6;
+  font-size: 1.30rem;
+  text-align: left;
+}
+
+.linkedInIcon {
+  margin-right: 15px;
+}
+
+.slogan{
+  width: 50%;
+}
+.amirImg {
+  border-radius: 70% 30% 72% 28% / 28% 35% 65% 72%;
+  width: 300px;
+  height: 300px;
+  object-fit: fill;
+
+}
+
+.benjaminImg {
+  border-radius: 37% 63% 49% 51% / 28% 35% 65% 72%;
+  width: 300px;
+  height: 300px;
+  object-fit: fill;
+}
+
+.dahyeonImg {
+  border-radius: 79% 21% 52% 48% / 40% 77% 23% 60%;
+  width: 300px;
+  height: 300px;
+  object-fit: fill;
+
+}
+
+.omarImg {
+  border-radius: 94% 6% 61% 39% / 16% 51% 49% 84%;
+  width: 300px;
+  height: 300px;
+  object-fit: fill;
+}
+
+@media (max-width: 768px) {
+  .teamDes{
+    flex-basis: 100%;
+    order: 2;
   }
-   .col {
-    margin-bottom: 40px; /* Add margin to separate each section */
-  }
-   h2 {
-    font-weight: 700;
-    color: #0033a1; /* Professional blue for headings */
-  }
- 
- 
-  .about_img {
-    height: 300px; /* Set a fixed height for all images */
-    width: 300px; /* Set a fixed width for all images */
-    object-fit: fill; /* Maintain aspect ratio and cover the entire container */
-    /* border-radius: 50%;  */
-    margin-bottom: 20px; /* Add some space below images */
-    margin-top: 20px; /* Add some space below images */
-  }
-   .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Center-align the columns */
-    gap: 20px
-  }
-   .col-lg-6 {
-    flex-basis: calc(50% - 20px); /* Adjust width with some gap between columns */
-    margin-bottom: 20px; /* Add margin at the bottom of each column */
-    background-color: #ffffff; /* White background color for each column */
-    padding: 20px;
-    border-radius: 10px; /* Add a slight border-radius for a softer look */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
-  }
-   /* Style links */
-  a {
-    color: #007BFF;
-    text-decoration: none;
-  }
-   a:hover {
-    text-decoration: underline;
-  }
-   /* Additional styling for paragraphs */
-  p {
-    color: #495057;
-    line-height: 1.6;
-    font-size: 1rem;
-  }
- 
- 
-  .linkedInIcon{
-    margin-right: 15px;
-  }
-   /* Responsive styling for smaller screens */
-  @media (max-width: 768px) {
-    .col-lg-6 {
-      flex-basis: 100%; /* Make columns full-width on smaller screens */
-    }
-  }
- 
+}

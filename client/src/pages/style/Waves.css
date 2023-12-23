@@ -1,0 +1,44 @@
+.custom-shape-divider-top-1702241434 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    margin-top:126px;
+}
+
+.custom-shape-divider-top-1702241434 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 132px;
+}
+
+.custom-shape-divider-top-1702241434 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* 
+
+.custom-shape-divider-top-1702245209 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    margin-top: -0px;
+}
+
+.custom-shape-divider-top-1702245209 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 216px;
+}
+
+.custom-shape-divider-top-1702245209 .shape-fill {
+    fill: #FFFFFF;
+} */

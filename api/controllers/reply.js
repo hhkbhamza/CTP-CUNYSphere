@@ -1,9 +1,7 @@
 const express = require("express");
-const passport = require("../middlewares/authentication");
 const router = express.Router();
 const db = require("../models");
-const { MicroPost } = db;
-
+const { Reply } = db;
 
 // This is a simple example for providing basic CRUD routes for
 // a resource/model. It provides the following:
@@ -16,17 +14,24 @@ const { MicroPost } = db;
 // The full URL's for these routes are composed by combining the
 // prefixes used to load the controller files.
 //    /api comes from the file ../app.js
-//    /micro_posts comes from the file ./microPosts.js
+//    /micro_posts comes from the file ./Replys.js
 
 router.get("/", (req, res) => {
-  MicroPost.findAll({}).then((allPosts) => res.json(allPosts));
+  Reply.findAll({}).then((allPosts) => res.json(allPosts));
 });
 
-router.post("/", passport.isAuthenticated(), (req, res) => {
-  MicroPost.create({
-    content: req.body.content,
-    fileName: req.body.fileName,
-  })
+router.get("/resumes/:id", (req, res) => {
+  Reply.findAll({ where: { matching_id: req.params.id } }).then((allPosts) =>
+    res.json(allPosts)
+  );
+});
+
+router.post("/", (req, res) => {
+  console.log(req.body);
+  let { content } = req.body;
+  let { matching_id } = req.body;
+
+  Reply.create({ content, matching_id })
     .then((newPost) => {
       res.status(201).json(newPost);
     })
@@ -35,27 +40,25 @@ router.post("/", passport.isAuthenticated(), (req, res) => {
     });
 });
 
-router.put("/:id", passport.isAuthenticated(), (req, res) => {
+router.get("/:id", (req, res) => {
   const { id } = req.params;
-  MicroPost.findByPk(id).then((mpost) => {
-    if (!mpost) {
+  Reply.findByPk(id).then((comment) => {
+    if (!comment) {
       return res.sendStatus(404);
     }
 
-    res.json(mpost);
+    res.json(comment);
   });
 });
 
-router.put("/:id", passport.isAuthenticated(), (req, res) => {
+router.put("/:id", (req, res) => {
   const { id } = req.params;
-  MicroPost.findByPk(id).then((mpost) => {
-    if (!mpost) {
+  Reply.findByPk(id).then((comment) => {
+    if (!comment) {
       return res.sendStatus(404);
     }
-
-    mpost.content = req.body.content;
-    mpost.fileName = req.body.fileName;
-    mpost
+    comment.content = req.body.content;
+    comment
       .save()
       .then((updatedPost) => {
         res.json(updatedPost);
@@ -66,14 +69,14 @@ router.put("/:id", passport.isAuthenticated(), (req, res) => {
   });
 });
 
-router.delete("/:id", passport.isAuthenticated(), (req, res) => {
+router.delete("/:id", (req, res) => {
   const { id } = req.params;
-  MicroPost.findByPk(id).then((mpost) => {
-    if (!mpost) {
+  Reply.findByPk(id).then((comment) => {
+    if (!comment) {
       return res.sendStatus(404);
     }
 
-    mpost.destroy();
+    comment.destroy();
     res.sendStatus(204);
   });
 });

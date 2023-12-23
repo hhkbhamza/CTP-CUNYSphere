@@ -27,7 +27,8 @@ function MainPage() {
           transition={{ duration: 1 }}
         >
           <motion.img
-            src="../84-removebg.png"
+          className="mainPage-img"
+            src="../Saly-1.png"
             alt=""
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.8, rotate: -90, borderRadius: "100%" }}
@@ -40,7 +41,7 @@ function MainPage() {
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <h2>About CUNY Sphere</h2>
+            <h2 className="mainPageh2">About CUNY Sphere</h2>
             <p>
               Navigating the digital landscape of education, students often
               struggle to find reliable resources and connect with peers who
@@ -60,7 +61,7 @@ function MainPage() {
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <h2>CUNY Crafters</h2>
+            <h2 className="mainPageh2">CUNY Crafters</h2>
             <p>
               CUNY Crafters is a team of four students enrolled at the City
               University of New York (CUNY), embarking on a transformative
@@ -86,39 +87,3 @@ function MainPage() {
 };
 
 export default MainPage;
-// import React from 'react';
-// import './MainPage.css';
-// import NavBar from '../components/NavBar'
-
-// const MainPage = () => {
-//   return (
-//     <div className="container">
-//       <NavBar/>
-//       <header>
-//         <h1>Main Page</h1>
-//         <nav>
-//           <ul>
-//             <li>Course</li>
-//             <li>Job</li>
-//             <li>News</li>
-//             <li>Calendar</li>
-//             <li>Support</li>
-//             <li><button>Sign out</button></li>
-//           </ul>
-//         </nav>
-//       </header>
-//       <main>
-//         <section className="courses-section">
-//           <h2>Computer Science | 2024 Winter Term</h2>
-//           <p>46 class section(s) found</p>
-//           {/* Course list here */}
-//         </section>
-//         <aside className="sidebar">
-//           {/* Sidebar content here */}
-//         </aside>
-//       </main>
-//     </div>
-//   );
-// };
-
-// export default MainPage;

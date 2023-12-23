@@ -25,6 +25,8 @@
     "pg": "^8.11.3",
     "pg-hstore": "^2.3.4",
     "react-firebase-hooks": "^5.1.1",
+    "react-pdf": "^7.6.0",
+    "react-pdf-js": "^5.1.0",
     "sequelize": "^6.33.0"
   },
   "devDependencies": {

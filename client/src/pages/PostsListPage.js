@@ -35,7 +35,9 @@ function PostsListPage() {
   return (
     <div className="container-fluid text-center">
       <div className="row justify-content-center">
-        {posts.map((entryData) => (
+        {posts
+          .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
+          .map((entryData) => (
           <MicroPostCard {...entryData} key={entryData.id} />
         ))}
       </div>

@@ -1,79 +1,70 @@
-import { useState, useRef, useEffect } from 'react';
-import { app } from '../firebase';
+import React, { useState, useEffect, useRef } from 'react';
 import { getDatabase, ref, push, onValue } from 'firebase/database';
-import { useAuth } from '../context/AuthContext';
-
-
+import { app } from '../firebase'; 
+import { useAuth } from '../context/AuthContext'; 
+import './ChatRoom.css';
 
 const database = getDatabase(app);
 const messagesRef = ref(database, 'messages');
 
 function ChatRoom() {
-  const dummy = useRef();
-  const query = messagesRef;
-
   const [messages, setMessages] = useState([]);
   const [formValue, setFormValue] = useState('');
-  const auth = useAuth();
+  const { user } = useAuth(); 
+  const bottomRef = useRef();
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        onValue(query, (snapshot) => {
-          const data = snapshot.val();
-          if (data) {
-            const messageList = Object.values(data);
-            setMessages(messageList.reverse());
-          }
-        });
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    };
+    const unsubscribe = onValue(messagesRef, (snapshot) => {
+      const data = snapshot.val() || {};
+      const loadedMessages = Object.entries(data).map(([key, val]) => ({
+        key,
+        ...val,
+      }));
+      setMessages(loadedMessages);
+    });
 
-    fetchData();
-  }, [query]);
+    return () => unsubscribe(); // Clean up the subscription
+  }, []);
 
   const sendMessage = async (e) => {
     e.preventDefault();
+    if (user && formValue.trim()) { // Check if the user exists and the message is not just whitespace
+      await push(messagesRef, {
+        text: formValue.trim(),
+        createdAt: Date.now(),
+        userFirstName: user.firstName, // Assuming the user object has a firstName property
+      });
 
-    // const userFirstName = auth.user ? auth.user.firstName || 'Guest' : 'Guest';
-    const userFirstName = auth.user.firstName;
-    console.log(userFirstName + 'hi');
-    await push(messagesRef, {
-      text: formValue,
-      createdAt: { '.sv': 'timestamp' },
-      userFirstName: userFirstName,
-    });
-
-    setFormValue('');
-    dummy.current.scrollIntoView({ behavior: 'smooth' });
+      setFormValue('');
+      bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
+    }
   };
-
   return (
-    <>
-      <main>
-        {messages.map((msg, index) => (
-          <div key={index} className="message">
-            <p>{`${msg.userFirstName || 'Guest'}: ${msg.text}`}</p>
+    <div className="chat-room">
+      <div className="messages-container">
+        {messages.map(({ key, uid, text, userFirstName }) => (
+          <div key={key} className={`message ${uid === user.uid ? 'sent' : 'received'}`}>
+            <div className="message-content">
+              <p>{text}</p>
+            </div>
+            <div className="message-name">{userFirstName}</div>
           </div>
         ))}
-        <span ref={dummy}></span>
-      </main>
-      <form onSubmit={sendMessage}>
+        <div ref={bottomRef} />
+      </div>
+      <form onSubmit={sendMessage} className="message-input-area">
         <input
+          className="message-input"
           value={formValue}
           onChange={(e) => setFormValue(e.target.value)}
-          placeholder="Say something nice"
+          placeholder="Type a message here..."
         />
-        <button type="submit" disabled={!formValue}>
-          🕊️
+        <button type="submit" className="send-button" disabled={!formValue.trim()}>
+          Send
         </button>
       </form>
-    </>
+    </div>
   );
 }
 
 export default ChatRoom;
-
-
