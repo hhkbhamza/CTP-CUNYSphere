@@ -37,7 +37,7 @@
 
 // News.js
 import React from 'react';
-import './style/NewsPage.css';
+import '../style/NewsPage.css';
 import NavBar from "../components/NavBar.js";
 
 function News() {

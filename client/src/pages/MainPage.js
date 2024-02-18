@@ -1,6 +1,6 @@
 import React from "react";
 import NavBar from "../components/NavBar";
-import "./style/MainPage.css";
+import "../style/MainPage.css";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import AnimatedTextCharacter from "../components/AnimatedTextCharacter";

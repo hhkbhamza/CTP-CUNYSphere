@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
-import "./style/SignupPage.css";
+import "../style/SignupPage.css";
 
 function SignUpPage() {
   const [userDetails, setUserDetails] = useState({

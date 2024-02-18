@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
-import './style/CoursePage.css'; // Make sure the CSS file is in the same directory
+import '../style/CoursePage.css'; // Make sure the CSS file is in the same directory
 import NavBar from '../components/NavBar';
 
 const CoursePage = () => {

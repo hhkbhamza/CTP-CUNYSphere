@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import { useNavigate } from "react-router-dom";
-import "./style/HomePage.css";
+import "../style/HomePage.css";
 import AuthButton from "../components/AuthButton";
 
 function HomePage() {

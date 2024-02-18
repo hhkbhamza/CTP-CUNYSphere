@@ -27,7 +27,7 @@
 
 .resume-feedback-container::before {
   content: "";
-  background-image: url('../../../public/Saly-23.png');
+  background-image: url('../../../client/public/Saly-23.png');
   /* Path to your image */
   background-size: cover;
   background-position: center;

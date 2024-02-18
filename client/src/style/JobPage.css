@@ -1,5 +1,5 @@
 .background-image {
-  background-image: url('../../../public/Saly-23.png');
+  background-image: url('../../public/Saly-23.png');
   background-size: cover;
   background-position: center;
   height: 300px; /* Adjust the height as needed */

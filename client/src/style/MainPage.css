@@ -36,7 +36,7 @@ p {
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: url('../../../public/cunyBackground.jpeg');
+  background-image: url('../../public/cunyBackground.jpeg');
   background-size: cover;
   background-position: center;
   opacity: 0.3;

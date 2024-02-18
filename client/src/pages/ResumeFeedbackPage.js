@@ -1,6 +1,6 @@
 import React from "react";
 import NavBar from "../components/NavBar";
-import "./style/ResumeFeedbackPage.css"; // Ensure the CSS file is correctly referenced
+import "../style/ResumeFeedbackPage.css"; // Ensure the CSS file is correctly referenced
 import PostFormPage from "./PostFormPage";
 import PostsListPage from "./PostsListPage";
 import MicroPostCard from "../components/MicroPostCard";
