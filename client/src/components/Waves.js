@@ -1,5 +1,5 @@
 import React from 'react';
-import "../pages/style/Waves.css"; // Import your CSS file for styling
+import "../style/Waves.css"; // Import your CSS file for styling
 
 const Waves = () => {
   return (
