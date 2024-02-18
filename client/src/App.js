@@ -13,7 +13,7 @@ import NewsPage from "./pages/NewsPage";
 import CoursePage from "./pages/CoursePage";
 import CareerConnectPage from "./pages/CareerConnectPage";
 import ResumeFeedbackPage from "./pages/ResumeFeedbackPage";
-import "../src/pages/style/App.css";
+import "../src/style/App.css";
 import { AuthProvider } from "./context/AuthContext";
 import PrivateRoute from "./components/PrivateRouteRequiresAuth";
 import MainPage from "./pages/MainPage";
