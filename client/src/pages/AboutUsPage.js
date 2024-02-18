@@ -1,5 +1,5 @@
 import React from "react";
-import "../pages/style/AboutUsPage.css";
+import "./style/AboutUsPage.css";
 import NavBar from "../components/NavBar";
 import Waves from "../components/Waves";
 

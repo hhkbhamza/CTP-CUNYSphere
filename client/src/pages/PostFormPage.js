@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Navigate } from "react-router-dom";
 import ErrorAlert from "../components/ErrorAlert";
-import "../pages/style/PostFormPage.css";
+import "./style/PostFormPage.css";
 import AWS from "aws-sdk";
 // import { pdfjs } from "react-pdf";
 
