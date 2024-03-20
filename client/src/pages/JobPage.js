@@ -29,7 +29,7 @@ function JobPage() {
   return (
     <div className="job-page">
       <NavBar onJobClick={toggleTabs} />
-      {showTabs && <JobTabs />}
+      {/* {showTabs && <JobTabs />} */}
       <div className="background-image" />
       <h1 className="resume-section-title">Resume</h1>
       <div className="resume-feedback">

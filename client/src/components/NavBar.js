@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import AuthButton from "./AuthButton";
+import 'bootstrap/js/dist/dropdown';
+
+
 
 function NavBar() {
   const [selectedNavItem, setSelectedNavItem] = useState(null);
@@ -27,6 +30,7 @@ function NavBar() {
     fontSize: "1.15rem",
   };
 
+    
   return (
     <div>
       <nav
@@ -37,8 +41,17 @@ function NavBar() {
           <Link className="navbar-brand" to="/">
             <img src="../cuny-sphere-preview.png" style={logoStyle} alt="Logo" />
           </Link>
-
+          
           <ul className="navbar-nav ml-auto"> 
+            <li className="nav-item" style={navLinkStyle}>
+              <NavLink
+                className="nav-link"
+                to="/main"
+                onClick={() => handleNavItemClick("main")}
+              >
+                Home
+              </NavLink>
+            </li>
             <li className="nav-item" style={navLinkStyle}>
               <NavLink
                 className="nav-link"
@@ -48,7 +61,7 @@ function NavBar() {
                 Course
               </NavLink>
             </li>
-            <li className="nav-item" style={navLinkStyle}>
+            {/* <li className="nav-item" style={navLinkStyle}>
               <NavLink
                 className="nav-link"
                 to="/job"
@@ -56,6 +69,30 @@ function NavBar() {
               >
                 Job
               </NavLink>
+            </li> */}
+            <li className="nav-item dropdown" style={navLinkStyle}>
+              <a className="nav-link dropdown-toggle" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Job
+              </a>
+              <ul className="dropdown-menu dropdown-menu-light" aria-labelledby="dropdownMenuOffset">
+                <li className="nav-item" style={navLinkStyle}>
+                    <NavLink className="dropdown-item disable" to="/job">
+                      Job Page
+                    </NavLink>
+                </li>
+                <li className="nav-item" style={navLinkStyle}>
+                  <NavLink className="dropdown-item disable" to="/#">
+                    Job Board
+                  </NavLink>
+                </li>
+                <li className="nav-item" style={navLinkStyle}>
+                  <NavLink className="dropdown-item disable" 
+                  to="/job/resume-feedback">
+                    Resume Feedback Form
+                  </NavLink>
+                </li>
+                
+              </ul>
             </li>
             <li className="nav-item" style={navLinkStyle}>
               <NavLink
@@ -74,8 +111,9 @@ function NavBar() {
               >
                 About Us
               </NavLink>
-            </li>
+            </li>            
 
+            
             <li className="nav-item">
               <AuthButton />
             </li>
