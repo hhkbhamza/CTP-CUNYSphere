@@ -20,7 +20,7 @@
     "react-wavify": "^1.9.0"
   },
   "scripts": {
-    "start": "cross-env DANGEROUSLY_DISABLE_HOST_CHECK=true GENERATE_SOURCEMAP=false react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
