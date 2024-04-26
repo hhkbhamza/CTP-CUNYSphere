@@ -17,6 +17,7 @@ import "../src/style/App.css";
 import { AuthProvider } from "./context/AuthContext";
 import PrivateRoute from "./components/PrivateRouteRequiresAuth";
 import MainPage from "./pages/MainPage";
+import JobBoard from "./pages/JobBoard";
 
 //Upload files
 import UploadFile from "./pages/UploadFile";
@@ -104,7 +105,12 @@ function App() {
                 path="/job/resume-feedback"
                 element={<PrivateRoute>{<ResumeFeedbackPage />}</PrivateRoute>}
               />
+              <Route 
+                path="/job/job-board" 
+                element={<PrivateRoute>{<JobBoard />}</PrivateRoute>} 
+              />
               <Route path="/news" element={<PrivateRoute>{<NewsPage />}</PrivateRoute>} />
+             
               <Route path="/course" element={<PrivateRoute>{<CoursePage />}</PrivateRoute>} />
               <Route path="/course/chat/0" element={<PrivateRoute>{<ChatRoom />}</PrivateRoute>} />
               <Route path="/course/chat/1" element={<PrivateRoute>{<ChatRoomOne />}</PrivateRoute>} />
