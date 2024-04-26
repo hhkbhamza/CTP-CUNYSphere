@@ -81,7 +81,7 @@ function NavBar() {
                     </NavLink>
                 </li>
                 <li className="nav-item" style={navLinkStyle}>
-                  <NavLink className="dropdown-item disable" to="/#">
+                  <NavLink className="dropdown-item disable" to="/job/job-board">
                     Job Board
                   </NavLink>
                 </li>
