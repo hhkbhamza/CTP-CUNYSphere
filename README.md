@@ -5,11 +5,12 @@
 
 
 ### Team Members
-Dahyeon Park, Benjamin Zhang, Omar Abdullah, Amir Hamza
+**Dahyeon Park, Benjamin Zhang, Omar Abdullah, Amir Hamza**
 
 ### Executive summary
-A summary of your project
+**A summary of your project**
 In today’s vast digital landscape, students often face challenges in sourcing reliable academic resources and engaging with peers who share their educational pursuits. CUNYSphere is designed to address these challenges by serving as a comprehensive platform for students. Here's how it works:
+
 ### What does the application do?
 CunySphere provides a two-fold service approach for students. Firstly, it offers a selection of vetted academic resources, assisting students in their studies. Secondly, it creates a dedicated space for students to interact, discuss, and collaborate on academic topics.
 
@@ -32,13 +33,9 @@ While there are existing platforms like CourseHero and CollegeConfidential that 
   Primary users seeking academic resources, engaging in discussions, asking questions, collaborating on projects, and interacting with peers.
 
 <details>
-<summary> **Roles:** </summary>
-- Access and download study materials
-- initiate or participate in discussions
-- create study groups
-- rate and review resources
-- See the latest news about CUNY
-- Upload your resumes for review
+<summary> Roles: </summary>
+- Access and download study materials, initiate or participate in discussions, create study groups, rate and review resources, see the latest news about CUNY, upload your resume for review.
+
 
 </details>
 
@@ -47,12 +44,9 @@ While there are existing platforms like CourseHero and CollegeConfidential that 
   Behind-the-scenes managers responsible for ensuring the platform’s smooth operation, which control over all aspects of the platform.
 
 <details>
-<summary>**Role:** </summery>
-- User management
-  - Adding or removing users and assigning roles
-  - Addressing major technical glitches
-  - Managing partnerships or integrations
-  - Overseeing the overall functioning of the platform
+<summary> Role: </summery>
+- User management, such as adding or removing users and assigning roles, addressing major technical glitches, managing partnerships or integrations, overseeing the overall functioning of the platform.
+
 </details>
 
 ### User Stories:
