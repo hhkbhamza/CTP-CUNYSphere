@@ -32,21 +32,20 @@ While there are existing platforms like CourseHero and CollegeConfidential that 
 **Description:** <br />
   Primary users seeking academic resources, engaging in discussions, asking questions, collaborating on projects, and interacting with peers.
 
-<details>
-<summary> Roles: </summary>
-- Access and download study materials, initiate or participate in discussions, create study groups, rate and review resources, see the latest news about CUNY, upload your resume for review.
-
-
-</details>
 
 ### Administrators
 **Description:** <br />
   Behind-the-scenes managers responsible for ensuring the platform’s smooth operation, which control over all aspects of the platform.
 
-<details>
-<summary> Role: </summery>
-- User management, such as adding or removing users and assigning roles, addressing major technical glitches, managing partnerships or integrations, overseeing the overall functioning of the platform.
 
+<details>
+<summary> Roles: </summary>
+
+#### Students
+- Access and download study materials, initiate or participate in discussions, create study groups, rate and review resources, see the latest news about CUNY, upload your resume for review.
+
+#### Administrators
+- User management, such as adding or removing users and assigning roles, addressing major technical glitches, managing partnerships or integrations, overseeing the overall functioning of the platform.
 
 
 </details>
