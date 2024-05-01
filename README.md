@@ -1,6 +1,6 @@
 # CunySphere
 ### Team Name & Project Name
-**Project Name:** CUNYSphere
+**Project Name:** CUNYSphere__
 **Team Name:** CUNYCrafters
 
 
@@ -8,7 +8,7 @@
 **Dahyeon Park, Benjamin Zhang, Omar Abdullah, Amir Hamza**
 
 ### Executive summary
-**A summary of your project**
+**A summary of your project**__
 In today’s vast digital landscape, students often face challenges in sourcing reliable academic resources and engaging with peers who share their educational pursuits. CUNYSphere is designed to address these challenges by serving as a comprehensive platform for students. Here's how it works:
 
 ### What does the application do?
@@ -29,7 +29,7 @@ While there are existing platforms like CourseHero and CollegeConfidential that 
 
 ## User Types:
 ### Students
-**Description:** 
+**Description:** __
   Primary users seeking academic resources, engaging in discussions, asking questions, collaborating on projects, and interacting with peers.
 
 <details>
@@ -40,7 +40,7 @@ While there are existing platforms like CourseHero and CollegeConfidential that 
 </details>
 
 ### Administrators
-**Description:** 
+**Description:** __
   Behind-the-scenes managers responsible for ensuring the platform’s smooth operation, which control over all aspects of the platform.
 
 <details>
@@ -50,7 +50,7 @@ While there are existing platforms like CourseHero and CollegeConfidential that 
 </details>
 
 ### User Stories:
-**As a student, I want to…**
+**As a student, I want to…** __
 easily register and create a profile so that I can access study resources.
 search and download relevant study materials so that I can prepare for my exams.
 join or initiate discussions on topics I'm interested in so that I can understand concepts better.
@@ -58,7 +58,7 @@ rate and review resources so that others can benefit from my feedback and make i
 create or join study groups so that I can collaborate with peers. 
 
 
-**As an administrator, I want to…**
+**As an administrator, I want to…** __
 manage user accounts, assigning roles and permissions so that the platform runs smoothly.
 handle technical issues and oversee updates so that the platform remains up-to-date and bug-free.
 analyze user activity and platform performance so that necessary improvements can be implemented.
