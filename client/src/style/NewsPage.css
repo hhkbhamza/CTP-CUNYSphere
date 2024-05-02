@@ -11,14 +11,17 @@
 }
 
 .news-title {
-  font-size: 24px;
+  font-size: 30px !important;
   margin-bottom: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
 }
 
 .news-content {
   font-size: 16px;
   line-height: 1.5;
   color: #333;
+  font-size: 20px !important;
 }
 
 .news-meta {
@@ -29,11 +32,13 @@
 
 .news-date {
   margin-right: 10px;
+  color: #0033a1;
+  font-size: larger;
 }
 
 .news-title {
   font-size: 24px;
   margin-bottom: 10px;
-  background-color: #baf5f0;
+  background-color: #617cb6;
   padding: 5px 10px;
 }

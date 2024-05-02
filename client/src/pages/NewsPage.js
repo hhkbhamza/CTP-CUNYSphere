@@ -5,17 +5,6 @@ import "../style/NewsPage.css";
 import NavBar from "../components/NavBar.js";
 
 function News() {
-  // Manually entered news articles
-  // const articles = [
-  //   {
-  //     title: "CUNY Opens New Tech Center",
-  //     content: "The City University of New York has announced the opening of a new technology center...",
-  //     author: "Jane Doe",
-  //     date: "2023-12-13"
-  //   },
-  //   // ... other articles
-  // ];
-
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
@@ -37,6 +26,7 @@ function News() {
               .find(".entry-content p:first-child")
               .text()
               .trim();
+
             const date = $(element).find(".date").text().trim();
 
             return {
@@ -63,6 +53,7 @@ function News() {
       <div className="news-container">
         {articles
           .filter((article) => article.content) // Filter out articles that don't have content
+          .slice(1) // Skips the first article which displayed all article data in one article
           .map((article, index) => (
             <article key={index} className="news-article">
               <h2 className="news-title">{article.title}</h2>
