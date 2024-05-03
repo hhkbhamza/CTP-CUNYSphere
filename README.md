@@ -21,6 +21,12 @@
 [![Sequelize][Sequelize]][Sequelize-url]
 [![Passport][Passport]][Passport-url]
 [![Postgre][PostgreSQL]][PostgreSQL-url]
+[![Firebase][Firebase]][Firebase-url]
+[![Bootstrap][Bootstrap]][Bootstrap-url]
+[![AWS][AWS]][AWS-url]
+[![Render][Render]][Render-url]
+[![Visual Studio Code][Visual Studio Code]][Visual Studio Code-url]
+[![Framer][Framer]][Framer-url]
 
 
 <p align="right"><a href="#readme-top">Back to top</a></p>
@@ -279,11 +285,31 @@ npm start
 [Git]: https://img.shields.io/badge/git-000000?style=for-the-badge&logo=git&logoColor=orange
 [Git-url]: https://git-scm.com/
 
-[Sequelize]: https://img.shields.io/badge/SEQUELIZE-52b0e7?style=for-the-badge&logo=https://svgshare.com/i/15fx.svg&logoColor=blue&labelColor=blue
+[Sequelize]: https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=Sequelize&logoColor=white
 [Sequelize-url]: https://sequelize.org/
 
 [Passport]: https://img.shields.io/badge/passport.js-000000?style=for-the-badge&logo=passport&logoColor=d4fd02
 [Passport-url]: https://www.passportjs.org/
 
-[PostgreSQL]: https://img.shields.io/badge/PostgreSQL-%234169E1?style=for-the-badge&logo=postgresql&logoColor=white
+[PostgreSQL]: https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white
 [PostgreSQL-url]: https://www.postgresql.org/
+
+[Firebase]: https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34
+[Firebase-url]: https://firebase.google.com/
+
+[Bootstrap]: https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white
+[Bootstrap-url]: https://getbootstrap.com/
+
+[AWS]: https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white
+[AWS-url]: https://aws.amazon.com/pm/serv-s3/?gclid=Cj0KCQjwltKxBhDMARIsAG8KnqWLb91xSRfBsiO_AIPE8mcfE25YN3WX5OfY3R9a0sX6zigGkINH8lUaAnIrEALw_wcB&trk=fecf68c9-3874-4ae2-a7ed-72b6d19c8034&sc_channel=ps&ef_id=Cj0KCQjwltKxBhDMARIsAG8KnqWLb91xSRfBsiO_AIPE8mcfE25YN3WX5OfY3R9a0sX6zigGkINH8lUaAnIrEALw_wcB:G:s&s_kwcid=AL!4422!3!536452728638!e!!g!!aws%20s3!11204620052!112938567994
+
+
+[Render]: https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white
+[Render-url]: https://render.com/
+
+[Visual Studio Code]: https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white
+[Visual Studio Code-url]: https://code.visualstudio.com/
+
+[Framer]: https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue
+[Framer-url]: https://www.framer.com/motion/
+
