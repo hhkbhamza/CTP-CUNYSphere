@@ -11,7 +11,7 @@
 
 [![Node][Node.js]][Node-url]
 [![Express][Express.js]][Express-url]
-[![JWT][JWT]][JWT-url]
+[![Bcrypt.js][Bcrypt.js]][Bcrypt.js-url]
 [![JavaScript][Javascript]][Javascript-url]
 [![HTML][HTML]][HTML-url]
 [![CSS][CSS]][CSS-url]
@@ -254,8 +254,8 @@ npm start
 [Express.js]: https://img.shields.io/badge/express.js-000000?style=for-the-badge&logo=express&logoColor=ffffff
 [Express-url]: https://expressjs.com/
 
-[JWT]: https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens
-[JWT-url]: https://jwt.io/
+[Bcrypt.js]: https://img.shields.io/badge/Bcrypt.js-black?style=for-the-badge&logo=JSON%20web%20tokens
+[Bcrypt.js-url]: https://www.npmjs.com/package/bcrypt
 
 [JavaScript]: https://img.shields.io/badge/javascript-323330?style=for-the-badge&logo=javascript&logoColor=f0db4f
 [JavaScript-url]: https://www.javascript.com/
