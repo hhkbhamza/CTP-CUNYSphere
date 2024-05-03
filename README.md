@@ -17,6 +17,7 @@
 [![CSS][CSS]][CSS-url]
 [![React][React]][React-url]
 [![Git][Git]][Git-url]
+[![Sequelize][Sequelize]][Sequelize-url]
 
 <p align="right"><a href="#readme-top">Back to top</a></p>
 
@@ -270,3 +271,6 @@ npm start
 
 [Git]: https://img.shields.io/badge/git-000000?style=for-the-badge&logo=git&logoColor=orange
 [Git-url]: https://git-scm.com/
+
+[Sequelize]: https://img.shields.io/badge/SEQUELIZE-Blue?style=for-the-badge&logo=https://svgshare.com/i/15fx.svg&logoColor=#257CA3&labelColor=#257CA3
+[Sequelize]: https://sequelize.org/
