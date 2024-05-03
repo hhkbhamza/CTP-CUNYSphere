@@ -7,6 +7,19 @@
 ### Team Members
 **Dahyeon Park, Benjamin Zhang, Omar Abdullah, Amir Hamza**
 
+### Built With
+
+[![Node][Node.js]][Node-url]
+[![Express][Express.js]][Express-url]
+[![JWT][JWT]][JWT-url]
+[![JavaScript][Javascript]][Javascript-url]
+[![HTML][HTML]][HTML-url]
+[![CSS][CSS]][CSS-url]
+[![React][React]][React-url]
+[![Git][Git]][Git-url]
+
+<p align="right"><a href="#readme-top">Back to top</a></p>
+
 ### Executive summary
 **A summary of your project** <br />
 In today’s vast digital landscape, students often face challenges in sourcing reliable academic resources and engaging with peers who share their educational pursuits. CUNYSphere is designed to address these challenges by serving as a comprehensive platform for students. Here's how it works:
@@ -231,3 +244,29 @@ npm start
     - Do NOT add the `PORT` variable (Render will set this for you)
   - Click the "__Create Web Service__" button
   - Your application will be live in 1-5 minutes
+
+
+
+[Node.js]: https://img.shields.io/badge/node.js-303030?style=for-the-badge&logo=nodedotjs&logoColor=3c873a
+[Node-url]: https://nodejs.org/en
+
+[Express.js]: https://img.shields.io/badge/express.js-000000?style=for-the-badge&logo=express&logoColor=ffffff
+[Express-url]: https://expressjs.com/
+
+[JWT]: https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens
+[JWT-url]: https://jwt.io/
+
+[JavaScript]: https://img.shields.io/badge/javascript-323330?style=for-the-badge&logo=javascript&logoColor=f0db4f
+[JavaScript-url]: https://www.javascript.com/
+
+[HTML]: https://img.shields.io/badge/html-e34c26?style=for-the-badge&logo=html5&logoColor=ffffff
+[HTML-url]: https://developer.mozilla.org/en-US/docs/Web/HTML
+
+[CSS]: https://img.shields.io/badge/css-ffffff?style=for-the-badge&logo=css3&logoColor=264de4
+[CSS-url]: https://developer.mozilla.org/en-US/docs/Web/CSS
+
+[React]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://react.dev/
+
+[Git]: https://img.shields.io/badge/git-000000?style=for-the-badge&logo=git&logoColor=orange
+[Git-url]: https://git-scm.com/
