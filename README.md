@@ -272,5 +272,5 @@ npm start
 [Git]: https://img.shields.io/badge/git-000000?style=for-the-badge&logo=git&logoColor=orange
 [Git-url]: https://git-scm.com/
 
-[Sequelize]: https://img.shields.io/badge/SEQUELIZE-Blue?style=for-the-badge&logo=https://svgshare.com/i/15fx.svg&logoColor=#257CA3&labelColor=#257CA3
+[Sequelize]: https://img.shields.io/badge/SEQUELIZE-52b0e7?style=for-the-badge&logo=https://svgshare.com/i/15fx.svg&logoColor=blue&labelColor=blue
 [Sequelize-url]: https://sequelize.org/
