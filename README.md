@@ -9,6 +9,7 @@
 
 ### Built With
 
+[![Next][Next.js]][Next-url]
 [![Node][Node.js]][Node-url]
 [![Express][Express.js]][Express-url]
 [![Bcrypt.js][Bcrypt.js]][Bcrypt.js-url]
@@ -18,6 +19,9 @@
 [![React][React]][React-url]
 [![Git][Git]][Git-url]
 [![Sequelize][Sequelize]][Sequelize-url]
+[![Passport][Passport]][Passport-url]
+[![Postgre][PostgreSQL]][PostgreSQL-url]
+
 
 <p align="right"><a href="#readme-top">Back to top</a></p>
 
@@ -248,6 +252,9 @@ npm start
 
 
 
+[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=next.js&logoColor=ffffff
+[Next-url]: https://nextjs.org/
+
 [Node.js]: https://img.shields.io/badge/node.js-303030?style=for-the-badge&logo=nodedotjs&logoColor=3c873a
 [Node-url]: https://nodejs.org/en
 
@@ -274,3 +281,9 @@ npm start
 
 [Sequelize]: https://img.shields.io/badge/SEQUELIZE-52b0e7?style=for-the-badge&logo=https://svgshare.com/i/15fx.svg&logoColor=blue&labelColor=blue
 [Sequelize-url]: https://sequelize.org/
+
+[Passport]: https://img.shields.io/badge/passport.js-000000?style=for-the-badge&logo=passport&logoColor=d4fd02
+[Passport-url]: https://www.passportjs.org/
+
+[PostgreSQL]: https://img.shields.io/badge/PostgreSQL-000000?style=for-the-badge&logo=postgresql&logoColor=336791
+[PostgreSQL]: https://www.postgresql.org/
