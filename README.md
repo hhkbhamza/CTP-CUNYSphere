@@ -285,5 +285,5 @@ npm start
 [Passport]: https://img.shields.io/badge/passport.js-000000?style=for-the-badge&logo=passport&logoColor=d4fd02
 [Passport-url]: https://www.passportjs.org/
 
-[PostgreSQL]: https://img.shields.io/badge/PostgreSQL-%234169E1?logo=postgresql&logoColor=white
+[PostgreSQL]: https://img.shields.io/badge/PostgreSQL-%234169E1?style=for-the-badgelogo=postgresql&logoColor=white
 [PostgreSQL-url]: https://www.postgresql.org/
