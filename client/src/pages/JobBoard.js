@@ -5,23 +5,25 @@ import Job from "../components/showJobs";
 import ReactPaginate from "react-paginate";
 import axios from "axios";
 import "../style/JobPage.css";
+import SearchForm from "../components/JobSearch";
 
 
 function JobBoard() {
+  const [params, setParams] = useState({});
   const [jobList, setJobList] = useState([]);
   const [pageCount, setpageCount] = useState(1);
   
   
   useEffect(()=>{
-    axios.get("https://api.adzuna.com/v1/api/jobs/us/search/1?app_id=137b3456&app_key=8a717f6eded0254abc2c045dcbccb735")
+    axios.get(encodeURI(`https://api.adzuna.com/v1/api/jobs/us/search/1?app_id=137b3456&app_key=8a717f6eded0254abc2c045dcbccb735`))
     .then(response=> setpageCount(Math.ceil(response.data.count / 10), setJobList(response.data.results))
       )
   }, [])
 
   //Fetching the jobs in a specific page
-  const fetchJobs = async (currentPage) => {
+  const fetchJobs = async (currentPage, currentSearch) => {
     try {
-      const response = await axios.get(`https://api.adzuna.com/v1/api/jobs/us/search/${currentPage}?app_id=137b3456&app_key=8a717f6eded0254abc2c045dcbccb735`);
+      const response = await axios.get(encodeURI(`https://api.adzuna.com/v1/api/jobs/us/search/${currentPage}?app_id=137b3456&app_key=8a717f6eded0254abc2c045dcbccb735&what_or=${currentSearch}`));
       return response.data.results;
     } catch (error) {
       console.error("Error fetching jobs:", error);
@@ -31,16 +33,28 @@ function JobBoard() {
 
   const handlePageClick = async ({ selected }) => {
     const currentPage = selected + 1;
-    const jobs = await fetchJobs(currentPage);
+    const currentSearch = params.what_or || '';
+    const jobs = await fetchJobs(currentPage, currentSearch);
     setJobList(jobs);
   };
   
+  const handleParamChange = async ({ value }) => {
+    setParams(prevParams => {
+      return { ...prevParams, what_or: value }; 
+    });
   
+    const currentPage = 1;
+    const currentSearch = value;
+    const searchJobs = await fetchJobs(currentPage, currentSearch);
+    setJobList(searchJobs);
+  };
+
   return (
     <div>
       <NavBar />
-      <h1 className="mb-4">Jobs</h1>
-      
+      <div className="background-image" />
+      <h1 className="" style={{textAlign:"center"}}>Job Board</h1>
+      <SearchForm params={params} onParamChange={handleParamChange} />
       <ReactPaginate
         previousLabel={"previous"}
         nextLabel={"next"}
