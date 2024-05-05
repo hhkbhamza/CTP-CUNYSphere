@@ -9,7 +9,6 @@
   padding: 20px;
   align-items: center;
   justify-content: center;
-  /* Add padding to the container if needed */
 }
 .resumeH1 {
   font-size: 2.5rem;
@@ -28,7 +27,6 @@
 .resume-feedback-container::before {
   content: "";
   background-image: url('../../../client/public/Saly-23.png');
-  /* Path to your image */
   background-size: cover;
   background-position: center;
   position: absolute;

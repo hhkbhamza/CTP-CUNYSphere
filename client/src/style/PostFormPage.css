@@ -3,8 +3,8 @@
   justify-content: center;
   align-items: center;
   border: 1px solid #ccc;
-  max-width: 600px; /* Adjust the max-width according to your design */
-  margin: 0 auto; /* Center the container */
+  max-width: 600px; 
+  margin: 0 auto; 
 }
 .postForm-input-group {
   margin-bottom: 20px;
@@ -51,7 +51,6 @@ textarea {
   background-color: #2980b9;
 }
 
-/* Correct class name for label */
 .post-form-label {
   font-weight: bold;
   margin-bottom: 8px;

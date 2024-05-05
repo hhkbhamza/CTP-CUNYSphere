@@ -5,15 +5,6 @@
   position: relative;
 }
 
-/* .box {
-  --mask:
-    radial-gradient(34.99px at calc(100% - 48.00px) 50%, #000 99%, #0000 101%) 0 calc(50% - 60px) / 100% 120px,
-    radial-gradient(34.99px at calc(100% + 18.00px) 50%, #0000 99%, #000 101%) calc(100% - 30px) 50% / 100% 120px repeat-y;
-  -webkit-mask: var(--mask);
-  mask: var(--mask);
-}
- */
-
 
 .missionWrapper {
   display: flex;
@@ -29,20 +20,13 @@
   align-items: center;
 }
 
-/* 
-.missionTextContainer {
-  max-width: 800px; 
-  margin: 0 auto;  
-} */
 .copyright {
   margin-bottom: -20px;
 }
 
 .missionImage {
   width: 100%;
-  /* Ensure the image takes 100% of the container width */
   height: auto;
-  /* Maintain the image aspect ratio */
   border-radius: 68% 32% 83% 17% / 53% 69% 31% 47%;
 }
 
@@ -81,7 +65,6 @@
   background-color: white;
   padding: 20px;
   border-radius: 10px;
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
   margin-top: 50px;
   opacity: 0.6;
 }

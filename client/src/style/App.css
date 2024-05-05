@@ -1,4 +1,3 @@
-/* Add custom CSS here */
 .homepage {
     font-family: Arial, sans-serif;
     color: #333;
@@ -8,7 +7,7 @@
     display: flex;
     justify-content: space-between;
     padding: 1em;
-    background-color: #0055B7; /* Adjust color to match the design */
+    background-color: #0055B7; 
   }
   
   .menu-button {
@@ -20,14 +19,6 @@
     font-size: 1em;
   }
   
-  /* .login-button {
-    background-color: orange;
-    border: none;
-    color: white;
-    padding: 0.5em 1em;
-    border-radius: 20px;
-  } */
-  
   .main-content {
     text-align: center;
     padding: 2em;
@@ -35,11 +26,11 @@
   
   .title {
     font-size: 4em;
-    color: #0055B7; /* Adjust color to match the design */
+    color: #0055B7; 
   }
   
   .title-accent {
-    color: red; /* Adjust color to match the design */
+    color: red; 
   }
   
   .tagline {

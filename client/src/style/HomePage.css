@@ -78,13 +78,11 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  /* Center text content */
 }
 
 .logoContainer {
   padding-top: 120px;
   text-align: center;
-  /* Center text content */
 }
 
 .logoContainer .title {
