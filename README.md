@@ -30,7 +30,7 @@
 
 
 <p align="right"><a href="#readme-top">Back to top</a></p>
-![image](https://github.com/hhkbhamza/CTP-CUNYSphere/assets/110001038/9172be9c-9dd2-4623-97cd-7ddda92b1d93)
+![Screenshot 2024-05-07 234507](https://github.com/hhkbhamza/CTP-CUNYSphere/assets/110001038/c89926a0-7974-4098-aa85-a265733556eb)
 
 ### Executive summary
 **A summary of your project** <br />
