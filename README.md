@@ -30,9 +30,15 @@
 
 
 <p align="right"><a href="#readme-top">Back to top</a></p>
-![Screenshot 2024-05-07 234507](https://github.com/hhkbhamza/CTP-CUNYSphere/assets/110001038/c89926a0-7974-4098-aa85-a265733556eb)
 
+![Screenshot 2024-05-07 234507](https://github.com/hhkbhamza/CTP-CUNYSphere/assets/110001038/ad46c877-33a6-44e8-8131-40a25bdb3b5f)
+![Screenshot 2024-05-08 000856](https://github.com/hhkbhamza/CTP-CUNYSphere/assets/110001038/7948e332-e733-4acf-adfb-4499f48f8d35)
+![Screenshot 2024-05-08 001003](https://github.com/hhkbhamza/CTP-CUNYSphere/assets/110001038/5bb78a33-fe8a-4ef3-8d72-cb65aef885e0)
+![Screenshot 2024-05-08 001206](https://github.com/hhkbhamza/CTP-CUNYSphere/assets/110001038/6016fe2c-39e8-4d23-b898-b07b6cf6ac8e)
+![Screenshot 2024-05-08 001314](https://github.com/hhkbhamza/CTP-CUNYSphere/assets/110001038/ebaf4429-57c7-4d86-9a08-d3fa0ba69b6c)
 ### Executive summary
+
+
 **A summary of your project** <br />
 In today’s vast digital landscape, students often face challenges in sourcing reliable academic resources and engaging with peers who share their educational pursuits. CUNYSphere is designed to address these challenges by serving as a comprehensive platform for students. Here's how it works:
 
