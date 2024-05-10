@@ -226,43 +226,6 @@ npm start
 
 > In production you will only deploy a single app. The react client will build into static files that will be served from the backend.
 
-### Hosting on [Render.com](https://render.com/) 
-
-1. Create an account by clicking the __Get Started__ button
-  - It's recommended to Sign up using your __Github__ account for easy linking to project repos.
-  - The __Individual__ account type does NOT require a credit card
-2. Navigate to the [Dashboard](https://dashboard.render.com/)
-3. Create a PostgreSQL Database
-  - Click the __New +__ button at the top of the page
-  - Select __PostgreSQL__ from the drop down menu
-  - Provide a __Name__ for your projects database
-  - Choose a __Region__ closest to you or your users.
-  - Choose __Instance Type__: Free
-  - You can leave the optional settings empty
-  - Click on the __Create Database__ button
-  - Your database will be ready to use in 1-5 minutes.
-  - Once the database is active, make note of where to get the Connection details, such as "__Internal Database URL__" and "__External Database URL__"
-4. Create a Web Service
-  - Click the __New +__ button at the top of the page
-  - Select __Web Service__ from the drop down menu
-  - Click on the __"Build and deploy from a Git repository"__ option and click __Next__
-  - Connect to your project's repository on Github
-  - Provide a __Name__ for your projects web app
-  - Choose the same __Region__ as you chose for your database (_important for db connectivity_)
-  - Choose the __Branch__ with the code you want to deploy (usually `main`)
-  - Leave the __Root Directory__ empty
-  - Choose __Runtime__: Node
-  - Set __Build Command__: `npm install && npm run build`
-  - Set __Start Command__: `npm start`
-  - Choose __Instance Type__: `Free`
-  - Expand the __Advanced__ options
-  - Add __Environment Variables__
-    + key: `SESSION_SECRET` = value: click on the __Generate__ button
-    + key: `DATABASE_URL` = value: copy the "__Internal Database URL__" from your step 3.
-    - Do NOT add the `PORT` variable (Render will set this for you)
-  - Click the "__Create Web Service__" button
-  - Your application will be live in 1-5 minutes
-
 
 
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=next.js&logoColor=ffffff
