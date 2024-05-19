@@ -58,17 +58,6 @@ CUNYSphere is tailored specifically to college students, particularly those with
 While there are existing platforms like CourseHero and CollegeConfidential that cater to student needs, they tend to address only one aspect of the student experience. CourseHero primarily focuses on providing study materials, while CollegeConfidential emphasizes student discussions. CUNYSphere sets itself apart by integrating academic resources with a vibrant community, offering students a holistic experience. This unique combination makes CUNYSphere a necessary addition to the current market.
 
 
-## User Types:
-### Students
-**Description:** <br />
-  Primary users seeking academic resources, engaging in discussions, asking questions, collaborating on projects, and interacting with peers.
-
-
-### Administrators
-**Description:** <br />
-  Behind-the-scenes managers responsible for ensuring the platform’s smooth operation, which control over all aspects of the platform.
-
-
 <details>
 <summary> Roles: </summary>
 
