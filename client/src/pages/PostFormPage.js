@@ -14,7 +14,7 @@ function PostFormPage() {
   const uploadFile = async () => {
     //pdfsaverbucketctp
     //us-east-2
-    const S3_BUCKET = process.env.REACT_APP_AWS_ACCESS_KEY_ID;
+    const S3_BUCKET = process.env.REACT_APP_AWS_BUCKET;
     const REGION = process.env.REACT_APP_AWS_REGION;
 
     AWS.config.update({
