@@ -12,12 +12,14 @@ function PostFormPage() {
   const [file, setFile] = useState(null);
 
   const uploadFile = async () => {
-    const S3_BUCKET = "pdfsaverbucketctp";
-    const REGION = "us-east-2";
+    //pdfsaverbucketctp
+    //us-east-2
+    const S3_BUCKET = process.env.REACT_APP_AWS_ACCESS_KEY_ID;
+    const REGION = process.env.REACT_APP_AWS_REGION;
 
     AWS.config.update({
-      accessKeyId: "",
-      secretAccessKey: "/",
+      accessKeyId: process.env.REACT_APP_AWS_ACCESS_KEY_ID,
+      secretAccessKey: process.env.REACT_APP_AWS_SECRET_ACCESS_KEY,
     });
 
     const s3 = new AWS.S3({
