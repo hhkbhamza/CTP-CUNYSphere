@@ -96,13 +96,13 @@ function App() {
             <Routes>
               <Route path="/main" element={<MainPage />} />
               <Route path="/about-us" element={<AboutUsPage />} />
-              <Route path="/job" element={<PrivateRoute>{<JobPage />}</PrivateRoute>} />
+              <Route path="/job/resume-page" element={<PrivateRoute>{<JobPage />}</PrivateRoute>} />
               <Route
                 path="/job/career-connect"
                 element={<PrivateRoute>{<CareerConnectPage />}</PrivateRoute>}
               />
               <Route
-                path="/job/resume-feedback"
+                path="/job/resume-feedback-form"
                 element={<PrivateRoute>{<ResumeFeedbackPage />}</PrivateRoute>}
               />
               <Route 

@@ -76,22 +76,22 @@ function NavBar() {
               </a>
               <ul className="dropdown-menu dropdown-menu-light" aria-labelledby="dropdownMenuOffset">
                 <li className="nav-item" style={navLinkStyle}>
-                    <NavLink className="dropdown-item disable" to="/job">
-                      Job Page
+                    <NavLink className="dropdown-item disable" to="/job/resume-page">
+                      Resumes
                     </NavLink>
+                </li>
+                
+                <li className="nav-item" style={navLinkStyle}>
+                  <NavLink className="dropdown-item disable" 
+                  to="/job/resume-feedback-form">
+                    Resume Feedback Form
+                  </NavLink>
                 </li>
                 <li className="nav-item" style={navLinkStyle}>
                   <NavLink className="dropdown-item disable" to="/job/job-board">
                     Job Board
                   </NavLink>
                 </li>
-                <li className="nav-item" style={navLinkStyle}>
-                  <NavLink className="dropdown-item disable" 
-                  to="/job/resume-feedback">
-                    Resume Feedback Form
-                  </NavLink>
-                </li>
-                
               </ul>
             </li>
             <li className="nav-item" style={navLinkStyle}>
