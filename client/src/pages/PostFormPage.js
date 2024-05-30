@@ -12,11 +12,15 @@ function PostFormPage() {
   const [file, setFile] = useState(null);
 
   const uploadFile = async () => {
-    //pdfsaverbucketctp
-    //us-east-2
+    //"pdfsaverbucketctp"
+    //process.env.REACT_APP_AWS_BUCKET
+    //"us-east-2"
+    //process.env.REACT_APP_AWS_REGION
     const S3_BUCKET = process.env.REACT_APP_AWS_BUCKET;
     const REGION = process.env.REACT_APP_AWS_REGION;
 
+    //process.env.REACT_APP_AWS_ACCESS_KEY_ID
+    //process.env.REACT_APP_AWS_SECRET_ACCESS_KEY
     AWS.config.update({
       accessKeyId: process.env.REACT_APP_AWS_ACCESS_KEY_ID,
       secretAccessKey: process.env.REACT_APP_AWS_SECRET_ACCESS_KEY,
@@ -77,7 +81,7 @@ function PostFormPage() {
     }
   };
 
-  if (success) return <Navigate to="/Job" />;
+  if (success) return <Navigate to="/Job/resume-page" />;
 
   return (
     <div className="postForm-container">
